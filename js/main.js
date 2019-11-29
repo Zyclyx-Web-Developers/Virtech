@@ -14,26 +14,24 @@ document.addEventListener('scroll', function() {
 
 
 /* ===  NAVBAR BACKGROUND CHANGE ON SCROLL === */
-const navbar = document.querySelector(".navbar");
-const homeContainer = document.querySelector("#homeContainer");
-
-const sectionOneOptions = {
-  rootMargin: "-80px 0px 0px 0px"
-};
-
-const sectionOneObserver = new IntersectionObserver(function( entries ) {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) {
-        navbar.classList.remove("navbar-light")
-      navbar.classList.add("navbar-dark");
-    } else {
-      navbar.classList.remove("navbar-dark");
-      navbar.classList.add("navbar-light");
-    }
-  });
-},
-sectionOneOptions);
-sectionOneObserver.observe(homeContainer);
+// const navbar = document.querySelector(".navbar");
+// const homeContainer = document.querySelector("#homeContainer");
+// const sectionOneOptions = {
+//   rootMargin: "-80px 0px 0px 0px"
+// };
+// const sectionOneObserver = new IntersectionObserver(function( entries ) {
+//   entries.forEach(entry => {
+//     if (!entry.isIntersecting) {
+//         navbar.classList.remove("navbar-light")
+//       navbar.classList.add("navbar-dark");
+//     } else {
+//       navbar.classList.remove("navbar-dark");
+//       navbar.classList.add("navbar-light");
+//     }
+//   });
+// },
+// sectionOneOptions);
+// sectionOneObserver.observe(homeContainer);
 /* === END - NAVBAR BACKGROUND COLOR TOGGLE ON SCROLL === */
 
 

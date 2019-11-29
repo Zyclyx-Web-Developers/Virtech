@@ -15,15 +15,11 @@
 /*
 ==== COLORS ====
  */
-:root {
-  --color-1:#FF8140;
-  --color-2:#007bff;
-  --color-3:#796eff;
-  --color-4:#21c87a;
-  --color-5:#4e66f8;
- 
+:root { 
   --font:'custom-font', sans-serif;
   --color:#008080;
+  --navbar-bg:#f4f4f4; 
+  --navbar-text:#36384c;
 }
  
 /* 
@@ -69,8 +65,8 @@ body {
 }
 
 .wrapper{
-  padding-top: 4rem !important;
-  padding-bottom: 4rem !important;
+  padding-top: 3.5rem !important;
+  padding-bottom: 3.5rem !important;
    
 }
 
@@ -78,6 +74,7 @@ body {
    fill:var(--color);
  }
 
+ /* Animated Underline for Anchor links */
 .animate-link {
   position: relative;
   color: #008080;
@@ -116,23 +113,7 @@ body {
   -ms-transform: scaleX(1);
   -o-transform: scaleX(1);
 }
-
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.title-caption {
-  font-family: "Montserrat", sans-serif;
-  font-family: 'Nunito', sans-serif;
-} */
-
-/* p {
-  font-family: "Open Sans", sans-serif;
-  font-family: "Montserrat", sans-serif;
-} */
-
+ 
 .text-1,
 .text-2,
 .text-3,
@@ -225,8 +206,7 @@ h6,
   text-align: center;         
 }
  
-/* breadcrumb */
- /* breadcrumb */
+/* breadcrumb nav bar */  
 .breadcrumb {
   background-color: transparent;
   margin-left: 2rem;
@@ -266,27 +246,29 @@ h6,
     padding: 0 !important;
     /* font-family: 'Open Sans', sans-serif;                */
     transition: background 250ms ease-in;
-    border-bottom: 1px solid rgba(212, 245, 245,0.5);     
+    background: var(--navbar-bg);  
+    border-bottom: 1px solid #d4f5f5; 
+    box-shadow: 0 8px 6px -6px rgba(0, 50, 50,0.4);
   }
 
   .navbar .nav-link{
     font-weight: 600;
     color:var(--navbar-text) !important;     
   }
-  .navbar-light .nav-link{
+  /* .navbar-light .nav-link{
     color: #ffffff;
-  }
+  } */
   .navbar button[aria-expanded="true"] .fas:before{
     content: "\f00d"
   }
-
+/* 
   .navbar-light{ 
-    background: rgba(39, 153, 255,0.1) !important;  
+  
   }
   .navbar-dark{          
     background-color:var(--navbar-bg) !important; 
-    box-shadow: 0 8px 6px -6px rgba(39, 153, 255,0.6);
-  }
+    
+  } */
     
   .navbar .navbar-toggler{
     transition: all 0.3s linear;
