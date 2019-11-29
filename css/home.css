@@ -285,7 +285,7 @@ font-size: 3rem;
 }
 .welcome-icon svg{
   /* fill: var(--color); */
-  fill: #ff4500;
+  fill: #008080;
 }
 .welcome-card{
   border: none !important;
