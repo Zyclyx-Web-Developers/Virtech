@@ -10,24 +10,8 @@
   font-style: normal;
 
 }
-  /* GOOGLE FONTS */
-@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
-@import url("https://fonts.googleapis.com/css?family=Lato|Montserrat|Muli|Open+Sans|Oswald|Questrial|Roboto&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Poppins|Rubik|Source+Sans+Pro&display=swap');
-
-/*  font-family: 'Lato', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Oswald', sans-serif;
-    font-family: 'Questrial', sans-serif;
-    font-family: 'Muli', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
-font-family: 'Rubik', sans-serif;
-font-family: 'Source Sans Pro', sans-serif;
- */
-
+ 
+ 
 /*
 ==== COLORS ====
  */
@@ -37,46 +21,9 @@ font-family: 'Source Sans Pro', sans-serif;
   --color-3:#796eff;
   --color-4:#21c87a;
   --color-5:#4e66f8;
-
-  --font-1:'Roboto', sans-serif;
-  --font-2:'Nunito', sans-serif;
-  --font-3:'Lato', sans-serif;
-  --font-4:'Montserrat', sans-serif;
-  --font-5: 'Poppins', sans-serif;
-  --font-6: 'Rubik', sans-serif;
-  --font-7:'Muli', sans-serif;
-  --font-8:'Oswald', sans-serif;
-  --font-9:'Questrial', sans-serif;
-  --font-10: 'Source Sans Pro', sans-serif;
-
+ 
   --font:'custom-font', sans-serif;
-  --color:#ff4500;
-
-  --black: #444655;
-  --blue: #007bff;
-  --blue-2:#335eea;
-  --aqua-marine: #e9efff;
-  --glitter: #e6f4f1;
-  --azureish-white: #cee8e6;
-  --aqua-marine: #6efacc;
-  --ghost-white: #f8f9ff;
-  --medium-gray: #a8aabc;
-  --sky-blue: #00dbf1;
-  --orange-red: #ea4300;
-  --green: #009d58;
-  --fresh-air: #aaddff;
-  --blue-shade: #0044bc;
-  --bg-color: #e2e9ef;
-  --bg-soft: #f3f7fa;
-  --text-color: #2a354f;
-  --text-color-2: #66799e;
-  --footer-bg:#152a49;
-  --text:#6c757d;
-  --hover:#006bb3;
-  --background-color: #e9ecef;
-
-  --navbar-bg:#0087FF;
-  --navbar-text:#f4f4f4;
+  --color:#008080;
 }
  
 /* 
@@ -94,10 +41,10 @@ font-family: 'Source Sans Pro', sans-serif;
     0 0.275rem 1.25rem -0.0625rem rgba(0, 0, 0, 0.05);
 }
 .btn-shadow-1 {
-  box-shadow: 0 0.5rem 1.125rem -0.5rem #007bff;
+  box-shadow: 0 0.5rem 1.125rem -0.5rem #008080;
 }
 .btn-shadow-2:hover{
-  box-shadow: 0 0.5rem 1.125rem -0.5rem #007bff;
+  box-shadow: 0 0.5rem 1.125rem -0.5rem #008080;
   transform: translate(0,-2px);
   -webkit-transform: translate(0,-2px);
   -moz-transform: translate(0,-2px);
@@ -133,12 +80,12 @@ body {
 
 .animate-link {
   position: relative;
-  color: #3ba3ff;
+  color: #008080;
   text-decoration: none;
 }
 
 .animate-link:hover {
-  color:#1490ff;
+  color:#008080;
   text-decoration: none;
 }
 .animate-link:before {
@@ -148,7 +95,7 @@ body {
   height: 1px;
   bottom: 5px;
   left: 0;
-  background-color: #1490ff;
+  background-color: #008080;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -251,7 +198,7 @@ h6,
  
 .quote-left{
   font-size: 1rem;
-  color: rgb(0, 123, 255,0.7);
+  color: #008080
 }
  
 /* 
@@ -295,7 +242,7 @@ h6,
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 123, 255,0.6);
+  background-color: #008080;
 }
 .overlay h1, .overlay h2{
   position:relative;
@@ -472,13 +419,13 @@ h6,
   margin-right: 20px;
   display: flex;     
   align-items: center;
-  color: #ff4500;
+  color: #008080;
 }
 
 .service-highlight{  
 height: 4px;
 width: 30px;
-background-color: #ff4500; 
+background-color: #008080; 
 margin-right: 10px; 
 }
 .capabilities{
