@@ -666,10 +666,10 @@ font-weight: 400 !important;
   font-weight: 800;
 }
 .stats-counter h3{
-  color: #6600ff;
+  color: #800040;
  }
 .stats-counter .title-3{
- color: #7e27ff;
+ color: #800040;
 }
 /* 
 ==== CLIENT LOGOS ====
@@ -714,15 +714,15 @@ font-weight: 400 !important;
 .contact-banner a{
   padding: 0.6rem 2rem;
   margin-top: 10px;
-  border-color: #007bff;
-  color: #007bff;
+  border-color: #00bcd4;
+  color: #008080;
   font-weight: 700;
   font-size: 1.2rem;
 }
 .contact-banner a:hover{
-background-color:#007bff;
+background-color:#008080;
 color: #ffffff;
-border-color: #007bff;
+border-color: #00bcd4;
 }
 
 @media (max-width: 575.98px) { 
