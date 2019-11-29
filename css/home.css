@@ -324,14 +324,14 @@ padding-bottom: 1rem;
   height: 0;    
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;  
-  border-top: 12px solid #0066FA;
+  border-top: 12px solid #008080;
   left: 45%;
   bottom: -12px;
   z-index: 99;
 }
 .industry-carousel .card-content{
   border-radius: 0.5rem;
-  border: 1px solid rgba(0, 123, 255,0.2);
+  border: 1px solid #00bcd4;
    
 }
 .industry-content h3{
@@ -359,13 +359,13 @@ padding-bottom: 1rem;
 }
 
 .industry-carousel .carousel-indicators svg{
-  fill:#0066FA !important;
+  fill:#008080 !important;
 }
 .industry-carousel .carousel-indicators  h4{
-  color: #0066FA !important;
+  color: #008080 !important;
 }
 .industry-carousel .carousel-indicators .active .card{
-  background-color: #0066FA;   
+  background-color: #008080;   
 }
  
 .industry-carousel li{
@@ -384,7 +384,7 @@ padding-bottom: 1rem;
 .our-projects .item {
   height: 90vh;
   position: relative;    
-  background-color:rgba(71, 23, 246,0.3);
+  background-color:#00bcd4;
 }
 .our-projects .item img {
   width: 100%;
