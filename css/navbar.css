@@ -75,7 +75,7 @@
   background: rgb(27, 43, 48,0.95) !important;
 }
  .dropdown-title{   
-  color: #00dbf1;
+  color: #008080;
   font-weight: 600; 
   font-size: 15px;
   margin-bottom: 0;
@@ -212,5 +212,8 @@ margin-left: 1rem !important;
 }
 .company-tagline{
   font-size: 0.9rem;
+}
+.dropdown-title{
+  color: #008080;
 }
 /* Footer End */
