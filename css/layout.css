@@ -232,6 +232,12 @@ h6,
   margin-left: 2rem;
   margin-top: 0.6rem;
 }
+.breadcrumb .breadcrumb-item:nth-child(1) a{
+  color: #008080 ;
+}
+.breadcrumb .breadcrumb-item .fa-home{
+  color: #008080;
+}
 .overlay{
   position: relative;
 }
