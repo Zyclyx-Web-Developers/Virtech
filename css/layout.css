@@ -242,7 +242,7 @@ h6,
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #008080;
+  background-color: rgba(0, 128, 128,0.6);
 }
 .overlay h1, .overlay h2{
   position:relative;
