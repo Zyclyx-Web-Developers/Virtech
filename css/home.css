@@ -130,7 +130,7 @@ width: 100%;
 
 #homeCarousel .carousel-item img{
 transition: all 6s linear;
-mix-blend-mode: soft-light;
+mix-blend-mode: soft-light; 
 }
 /* ken burn effect */
 #homeCarousel .carousel-inner .inactiveUntilOnLoad img,
