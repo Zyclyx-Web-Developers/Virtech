@@ -71,7 +71,8 @@
 }
 #homeCarousel  .carousel-item{     
   text-align: left;   
-  background-color: #008080;  
+  background-color: #008080;
+  background-color: #005959;  
 }
 
 #homeCarousel .custom-indicator{
@@ -101,7 +102,8 @@ transition:all 0.3s ease;
   border-top: 4px solid transparent;
   display: flex;
   align-items: center;
-  justify-content: center;      
+  justify-content: center; 
+  opacity: 1 !important;     
 } 
  
 #homeCarousel .custom-indicator .active {
@@ -315,6 +317,7 @@ padding-bottom: 1rem;
   align-items: center;
   border-radius:0;
   padding: 0 !important;
+  opacity: 1 !important;
 }
 .industry-carousel .carousel-indicators li p{
   margin-bottom: 0px;
