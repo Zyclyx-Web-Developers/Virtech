@@ -3,7 +3,7 @@
     background-size: contain;        
 }
 .overlay:before{
-    background-color: rgba(0, 128, 128,.6);
+    background-color: rgba(0, 128, 128,.8);
 }
 .address-card-body{     
     margin: 0.6rem;
