@@ -15,7 +15,9 @@
   height: 3px;
   z-index: 1100;
 }
-
+.dropdown-title{
+  color:#008080;
+}
  /* scroll to top buttoon */
  /* #scrollTop{
    display: none;
@@ -324,14 +326,14 @@ padding-bottom: 1rem;
   height: 0;    
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;  
-  border-top: 12px solid #0066FA;
+  border-top: 12px solid #008080;
   left: 45%;
   bottom: -12px;
   z-index: 99;
 }
 .industry-carousel .card-content{
   border-radius: 0.5rem;
-  border: 1px solid rgba(0, 123, 255,0.2);
+  border: 1px solid #00bcd4;
    
 }
 .industry-content h3{
@@ -359,13 +361,13 @@ padding-bottom: 1rem;
 }
 
 .industry-carousel .carousel-indicators svg{
-  fill:#0066FA !important;
+  fill:#008080 !important;
 }
 .industry-carousel .carousel-indicators  h4{
-  color: #0066FA !important;
+  color: #008080 !important;
 }
 .industry-carousel .carousel-indicators .active .card{
-  background-color: #0066FA;   
+  background-color: #008080;   
 }
  
 .industry-carousel li{
@@ -384,7 +386,7 @@ padding-bottom: 1rem;
 .our-projects .item {
   height: 90vh;
   position: relative;    
-  background-color:rgba(71, 23, 246,0.3);
+  background-color:#00bcd4;
 }
 .our-projects .item img {
   width: 100%;
@@ -661,11 +663,11 @@ font-weight: 400 !important;
   align-items: center;
   font-weight: 800;
 } */
-.stats-counter h3{
+.stats-counter h3{ 
   color: #1e000f;
  }
 .stats-counter .title-3{
- color: #1e000f;
+ color: #1e000f; 
 }
 /* 
 ==== CLIENT LOGOS ====
@@ -708,13 +710,13 @@ font-weight: 400 !important;
   font-size: 1.4rem !important;
 }
 .contact-banner a{
-  padding: 0.6rem 2rem;
+  padding: 0.6rem 2rem; 
   margin-top: 10px; 
   font-weight: 700;
   font-size: 1.2rem;
   color: #008080;
 }
-.contact-banner a:hover{
+.contact-banner a:hover{ 
   background-color: #008080;
 }
 
