@@ -1,15 +1,11 @@
 
-/* 
- ==== HOME PAGE STYLES ====
- */
+/* === HOME PAGE STYLES === */
+
+/* Scroll progress indicator */
  :root{
    --indicator-position:0%;
  }
- body{
-  scroll-behavior: smooth;
- }
 
- /* scroll progress indicator */
  .progress {
   background: linear-gradient(to right, #3ba3ff var(--scroll), transparent 0);
   background-repeat: no-repeat;
@@ -21,7 +17,7 @@
 }
 
  /* scroll to top buttoon */
- #scrollTop{
+ /* #scrollTop{
    display: none;
  }
  #scrollTop.btn{
@@ -64,17 +60,16 @@
   transition: all .2s ease-in;
   animation: none;
 }
- 
-/*
-HOME - CAROUSEL 
-*/  
+  */
+
+/* === HOME - IMAGE SLIDER  === */
+
 #homeCarousel  .carousel-inner{
   max-height: 100vh !important;
 }
-#homeCarousel  .carousel-item{  
-  /* background-color: rgba(0, 123, 255,0.6);  */
+#homeCarousel  .carousel-item{     
   text-align: left;   
-  background-color: #4eacff;  
+  background-color: #008080;  
 }
 
 #homeCarousel .custom-indicator{
@@ -108,7 +103,7 @@ transition:all 0.3s ease;
 } 
  
 #homeCarousel .custom-indicator .active {
-  color: #fff;   
+  color: #ffffff;   
 } 
 #homeCarousel .custom-indicator li:hover {
   color: #fff;
@@ -120,7 +115,7 @@ transition:all 0.3s ease;
   top: -6px;
   left: 0;
   height: 4px;
-  background-color: #FF8140 !important;
+  background-color: #800040 !important;
   animation:forwardin 5s linear;
   -webkit-animation:forwardin 5s linear;
 }
@@ -165,38 +160,10 @@ animation:caption-move-right 1.5s ease;
 #homeCarousel .carousel-caption h5{
 font-size: 3rem;      
 }
- /* 
- END - HOME CAROUSEL
- */
+ /* === END - HOME CAROUSEL === */
  
-.home-title{
-  font-size: 3rem;
-  color: #ffffff ;
-  font-weight: 600;
-  text-align: left;
-}
-.home-caption{
-  margin-top: 2rem !important;
-  font-size: 1.3rem;
-  color: #f3f7fa;
-}
-.home-btn a{
-  border: 2px solid #ffffff;
-  color: #ffffff;
-  transition:all 0.2s ease;
-}
-.home-btn a:hover{
-  background-color: #ffffff;
-  color: #111;
-  transition:all 0.2s ease;
-}
-/* 
-  ==== END - HOME VIDEO ====
-/* 
 
-/* 
-  ==== WELCOME SECTION
-*/
+ /* === WELCOME SECTION === */
 .welcome-wrap {   
   background-color: #ffffff;
   display: flex;
@@ -204,8 +171,7 @@ font-size: 3rem;
   align-items: center;
   flex-direction: column;
 }
-.welcome-icon svg{
-  /* fill: var(--color); */
+.welcome-icon svg{   
   fill: #008080;
 }
 .welcome-card{

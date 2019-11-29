@@ -78,20 +78,16 @@ sectionOneObserver.observe(homeContainer);
 
 
 /* === SCROLL TOP BUTTON === */    
-    window.onscroll = function () { scrollFunction() };
-    function scrollFunction() {
-      let scrollBtn = document.querySelector("#scrollTop");
-      if (document.body.scrollTop > 370 || document.documentElement.scrollTop > 370) {
-        scrollBtn.style.display = "block";
-      } else {
-        scrollBtn.style.display = "none";
-      }
-    }
+    // window.onscroll = function () { scrollFunction() };
+    // function scrollFunction() {
+    //   let scrollBtn = document.querySelector("#scrollTop");
+    //   if (document.body.scrollTop > 370 || document.documentElement.scrollTop > 370) {
+    //     scrollBtn.style.display = "block";
+    //   } else {
+    //     scrollBtn.style.display = "none";
+    //   }
+    // }
 
-    // smooth scrorll animation for scroll top
-    document.getElementById('scrollTop').addEventListener("click", function () {
-      $('html, body').animate({ scrollTop: 0 }, 'slow');
-    })
 /* === END - SCROLL TOP BUTTON === */    
 
 // DISABLE COPY PASTE AND RIGHT CLICK
