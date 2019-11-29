@@ -547,7 +547,7 @@ padding-bottom: 1rem;
 /* 
 ==== TESTIMONIAL ====
 */
-.testimonial-wrap{       
+/* .testimonial-wrap{       
   background-color: #f4f7f9;    
 }
   
@@ -598,7 +598,7 @@ padding-bottom: 1rem;
 }
 .testimonials-carousel .owl-item.center .quote-left{
   color: #fafafa;
-}
+} */
 /* 
 ==== END - TESTIMONIAL ====
 */
@@ -606,7 +606,7 @@ padding-bottom: 1rem;
 /* 
 ==== BLOG POSTS ====
 */
-.blog-posts-wrap{
+/* .blog-posts-wrap{
   padding-top: 3rem;
   padding-bottom: 2.5rem;
 }
@@ -632,7 +632,7 @@ font-weight: 400 !important;
 }
 .post-title .title-2{
   font-size: 18px !important;
-}
+} */
 /* 
 ==== END - BLOG POSTS ====
 */
@@ -640,15 +640,11 @@ font-weight: 400 !important;
 /* 
 ==== STATS =====
 */
-.stats-container{
-  /* background-color: #f5f8fd;
-  background-color: #DFF9FE;
-  background-color: #ECF9FE; */
-  background-color: #f3f7fa;  
-  background-color: #f6f9fc;
+.stats-container{   
+  background-color: #f4f4f4;
 }
 /* END - STATS  */
- 
+/*  
 .company-numbers,.company-numbers .card{
   background-color: #0044bc;
   border: none;
@@ -664,12 +660,12 @@ font-weight: 400 !important;
   font-size: 1.2rem;
   align-items: center;
   font-weight: 800;
-}
+} */
 .stats-counter h3{
-  color: #6600ff;
+  color: #1e000f;
  }
 .stats-counter .title-3{
- color: #7e27ff;
+ color: #1e000f;
 }
 /* 
 ==== CLIENT LOGOS ====
@@ -713,16 +709,13 @@ font-weight: 400 !important;
 }
 .contact-banner a{
   padding: 0.6rem 2rem;
-  margin-top: 10px;
-  border-color: #007bff;
-  color: #007bff;
+  margin-top: 10px; 
   font-weight: 700;
   font-size: 1.2rem;
+  color: #008080;
 }
 .contact-banner a:hover{
-background-color:#007bff;
-color: #ffffff;
-border-color: #007bff;
+  background-color: #008080;
 }
 
 @media (max-width: 575.98px) { 
