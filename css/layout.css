@@ -683,6 +683,9 @@ margin: 3px auto !important;
 }
 }
 
+.chat-bot{
+  display: none;
+}
 
 /* === CHAT BOT CSS === */
 .chat-bot .card-header {
