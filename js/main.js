@@ -1,3 +1,4 @@
+
 /* === SCROLL PROGRESS BAR === */
 var h = document.documentElement,
   b = document.body,
