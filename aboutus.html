@@ -23,6 +23,9 @@
 </head>
 
 <body>
+<!-- === PAGE LOADING  -->
+<div class="se-pre-con"></div>
+
     <!-- 
       ====== Navbar ======
     -->
@@ -321,11 +324,18 @@
     <script src="./js/vendor/aos.js"></script>
     <script src="./js/vendor/waypoints.min.js"></script>
     <script src="./js/vendor/counterup.min.js"></script>
-    <script>
+    <script>          
+    /* === PAGE LOADING === */    
+    $(window).on('load', function () {
+      // Animate loader off screen
+      $(".se-pre-con").fadeOut("slow");
+    })
+   
         $(function () {
             $("#navbar").load("navbar.html");
             $("#footer").load("footer.html");
         });
+
         window.onload = function () {
             // Initiate animate on scroll library
             AOS.init({
@@ -335,11 +345,11 @@
         }
 
         jQuery(document).ready(function($) {
-    $('[data-toggle="counter-up"]').counterUp({
+        $('[data-toggle="counter-up"]').counterUp({
         delay: 10,
         time: 800
-    });
-});
+        });
+        });
     </script>
 </body>
 

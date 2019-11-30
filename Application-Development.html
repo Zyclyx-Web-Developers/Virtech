@@ -20,6 +20,9 @@
 </head>
 
 <body>
+ <!-- === PAGE LOADING  -->
+ <div class="se-pre-con"></div>
+
   <div>
     <!-- 
       ==== Navbar ====
@@ -246,7 +249,13 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
     </script>
      <script src="./js/vendor/aos.js"></script>
      <script src="./js/chatBot.js"></script>
-  <script>
+  <script> 
+    $(window).on('load', function () {
+      // Animate loader off screen
+      $(".se-pre-con").fadeOut("slow");
+    })
+   
+
     $(function () {
       $("#navbar").load("navbar.html");
       $("#footer").load("footer.html");
