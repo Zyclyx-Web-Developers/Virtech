@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/navbar-color-switch.css">
+  <!-- <link rel="stylesheet" href="css/navbar-color-switch.css"> -->
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -1227,6 +1227,7 @@
   <script src="./js/vendor/counterup.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="./js/chatBot.js"></script>
   <!-- <script src="js/navbar-color-switch.js"></script>   -->
   <script>
     /* === PAGE LOADING === */
@@ -1234,6 +1235,10 @@
       // Animate loader off screen
       $(".se-pre-con").fadeOut("slow");
     })
+
+    $(function () {            
+      $("#chatBot").load("chat_bot.html");
+    });
   </script>
 </body>
 </html>
