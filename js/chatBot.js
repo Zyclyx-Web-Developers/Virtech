@@ -21,8 +21,8 @@ $(window).on('load', function () {
         event.preventDefault();
         let userText = document.getElementById('userText').value;
         messagesElement.innerHTML += `<p id="userReplay">${userText}</p>`
-        // fetch('https://ancient-anchorage-09006.herokuapp.com/virtech/', {
-        fetch('http://localhost:3000/virtech/', {
+        fetch('https://ancient-anchorage-09006.herokuapp.com/virtech/', {
+        //fetch('http://localhost:3000/virtech/', {
             method: 'post',
             headers: {
                 "Content-type": "application/json"
