@@ -17,12 +17,17 @@ $(window).on('load', function () {
 
     // Chat bot 
     let messagesElement = document.getElementById("botMessages");
+
     document.getElementById('bot-form').addEventListener('submit', function (event) {
         event.preventDefault();
+        event.stopPropagation();
         let userText = document.getElementById('userText').value;
+
+        // Check for Empty user input here
         messagesElement.innerHTML += `<p id="userReplay">${userText}</p>`
+
         fetch('https://ancient-anchorage-09006.herokuapp.com/virtech/', {
-        //fetch('http://localhost:3000/virtech/', {
+        // fetch('http://localhost:3000/virtech/', {
             method: 'post',
             headers: {
                 "Content-type": "application/json"
@@ -30,11 +35,13 @@ $(window).on('load', function () {
             body: JSON.stringify({ text: userText })
         })
             .then(function (response) {
+                // disable input and add loading wheel
                 return response.json();
             })
-            .then(function (output) {   
-                console.log(output)              
+            .then(function (output) {                                  
                 document.getElementById('userText').value = '';
+
+                if(output.response){
 
                 if (output.response[0].text) {
                     messagesElement.innerHTML += `<p id="botReplay">${output.response[0].text}</p>`
@@ -56,10 +63,10 @@ $(window).on('load', function () {
                     html += '</p>';
                     messagesElement.innerHTML += html;
                 }
-
+            }
             })
-            // .catch(function (err) {
-            //     console.log(err);
-            // })
+            .then(function(){
+                // Enable input and remove loading wheel
+            })             
     });
 })
