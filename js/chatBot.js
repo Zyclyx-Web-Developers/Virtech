@@ -30,16 +30,18 @@ function show(x) {
   let messagesElement = document.getElementById("botMessages");
   
   // Get Reply Message from chat bot on input submit
+
   document
   .getElementById("bot-form")
   .addEventListener("submit", function(e) {
     e.preventDefault();
     e.stopPropagation();
     let userText = document.getElementById("userText").value;
-  
     // if user input not empty send API Request to chat bot
     if(userText !== ''){
-    messagesElement.innerHTML += `<p id="userReplay">${userText}</p>`;   
+    messagesElement.innerHTML += `<p id="userReplay">${userText}</p>`; 
+    document.getElementById('userText').setAttribute("disabled", true);    
+    
     fetch("https://pure-tor-36404.herokuapp.com/virtech", {
       method: "post",
       headers: {
@@ -80,6 +82,13 @@ function show(x) {
       })
       .then(function(){
         // enable input and remove loading ...
+      let userInput = document.getElementById("userText")
+      userInput.removeAttribute("disabled");
+      userInput.focus();
+      })
+      .then(function(){
+        let chatBot=document.getElementById("scroll");   
+        chatBot.scrollTop = chatBot.scrollHeight;      
       })
     }
   });
