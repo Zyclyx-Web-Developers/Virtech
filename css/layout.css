@@ -296,7 +296,7 @@ body {
   }
  
   .navbar .navbar-toggler .fas{
-    color:#ffffff;
+    color:#152a49;
   }
       
   .navbar-brand img{
@@ -368,7 +368,7 @@ body {
   margin-left: 1rem !important;
   }
   .dropdown-industry{
-     min-width: 220px;
+     min-width: 240px;
   }
   /* end - show drop downmenu on hover */
   
@@ -647,8 +647,7 @@ margin:0 auto !important;
 .navbar-light{
   background-color: #2a354f !important;
 }
-.dropdown-menu{
-  background-color: rgba(42, 53, 79,0.5) !important;
+.dropdown-menu{  
   border: none !important;
 }
 .nav-item{
@@ -659,9 +658,7 @@ margin:0 auto !important;
 .nav-link{
   margin-left: 2rem;
 }
-.dropdown-item{
-  color: #e9ecef !important;
-}
+ 
 .dropdown-menu{
   margin-left: 3rem;
   padding: 0;

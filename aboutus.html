@@ -13,10 +13,7 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-    <!--Bootstrap font aswome CDN -->
-    <!-- Custom styles -->
-    <!-- <link href="style.css" rel="stylesheet" /> -->
-    <link rel="stylesheet" href="./css/main.css">
+    <!--Bootstrap font aswome CDN --> 
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/aboutus.css" />
     <link rel="stylesheet" href="css/aos.css">
@@ -30,7 +27,65 @@
       ====== Navbar ======
     -->
     <header class="main-navbar" id="mainNavbar">
-        <div id="navbar"></div>
+        <header class="main-navbar" id="mainNavbar">
+            <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-dark site-navbar" id="navbarMaster">              
+                <a class="navbar-brand ml-md-4" href="./index.html"><img src="./images/Virtech-KSA_logo.png"
+                    alt="Virtech Logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-master"
+                  aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">
+                  <!-- <span class="navbar-toggler-icon"></span> -->
+                  <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-master">
+                  <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-md-4">
+                    <!--  home -->
+                    <li class="nav-item active mx-2 py-3">
+                      <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+          
+                    <!-- services -->
+           
+                     <li class="nav-item dropdown mx-2 py-3">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuIndustry" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                      </a>
+                      <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuIndustry">
+                        <a class="dropdown-item my-1 py-1" href="./AI.html">Artificial Intelligence</a>
+                        <a class="dropdown-item my-1 py-1" href="./RPA.html">Robotic Process Automation</a>
+                        <a class="dropdown-item my-1 py-1" href="./Blockchain.html">BlockChain</a>
+                        <a class="dropdown-item my-1 py-1" href="./IoT.html">Internet Of Things</a>
+                        <a class="dropdown-item my-1 py-1" href="./Application-Development.html">Application Development</a>
+                        <a class="dropdown-item my-1 py-1" href="./Digital-Marketing.html">Digital Marketing</a>
+                        <a class="dropdown-item my-1 py-1" href="./Cyber-security-services.html">Cyber Security</a>
+                        <a class="dropdown-item my-1 py-1" href="./Bigdata.html">Big Data</a>
+                      </div>
+                    </li>
+          
+                    <!-- About us -->
+                    <li class="nav-item dropdown mx-2 py-3">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuAbout" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About us
+                      </a>
+                      <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuAbout">
+                        <a class="dropdown-item my-1 py-1" href="./why-virtech.html">Why VIRTECH</a>
+                        <a class="dropdown-item my-1 py-1" href="./aboutus.html">About Us</a>
+                      </div>
+                    </li>
+          
+                    <!-- careers -->
+                    <li class="nav-item mx-2 py-3">
+                      <a class="nav-link" href="./careers.html">Careers</a>
+                    </li>
+                    <!-- contact us -->
+                    <li class="nav-item mx-2 py-3">
+                      <a class="nav-link" href="./contactus.html">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              </header>
     </header>
     <!-- 
           ====== END Navbar ======
@@ -182,128 +237,7 @@
             </div>
         </div>
     </section>
-
-    <!-- Our company numbers -->
-    <section class="stats-container wrapper">
-        <div data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
-            <h2 class="title-1"><span class="title-highlight">Successfull</span> Stats About Us</h2>
-            <p class="title-caption">What we have achieved so far</p>
-        </div>
-        <div class="container mt-sm-3 mt-md-5">
-            <div class="row stats-counter py-3 text-center d-flex justify-content-center align-items-center">
-                <div class="col-6 col-md-3">
-                    <p><img src="./images/icons/projects.svg" alt="Projects"></p>
-                    <h3 class="title-2"><span data-toggle="counter-up">50</span> +</h3>
-                    <p class="text-2">Projects</p>
-                </div>
-                <div class="col-6 col-md-3">
-                    <p>
-                        <img src="./images/icons/clients.svg" alt="clients">
-                    </p>
-                    <h3 class="title-2"><span data-toggle="counter-up">100</span> +</h3>
-                    <p class="text-2">Clients</p>
-                </div>
-                <div class="col-6 col-md-3">
-                    <p>
-                        <img src="./images/icons/countries.svg" alt="">
-                    </p>
-                    <h3 class="title-2"><span data-toggle="counter-up">10</span> +</h3>
-                    <p class="text-2">Countries</p>
-                </div>
-                <div class="col-6 col-md-3">
-                    <p>
-                        <img src="./images/icons/users.svg" alt="">
-                    </p>
-                    <h3 class="title-2"><span data-toggle="counter-up">5000</span> +</h3>
-                    <p class="text-2">Users</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End - Our company numbers -->
-    <!-- Our Core Team -->
-    <section class="wrapper">
-        <div data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
-                <h3 class="title-1 text-center">Our Core<span class="title-highlight"> Team</span></h3>
-                <p class="title-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        
-        <div class="container-fluid row mx-auto pt-5">
-            <!-- member - 1 -->
-            <div class="col-md-6 col-lg-3 col-12 card team-card" data-aos="fade-up" data-aos-delay="150"
-            data-aos-duration="1000">
-                <div class="card-body">
-                    <p class="text-center pt-2"><img class="rounded-circle" src="./images/client_img.jpeg" alt=""></p>
-                    <p class="text-2 text-muted mb-1">Project Manager</p>
-                    <h3 class="title-2">Lorem ipsum dolor</h3>
-                    <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit,Mollitia consequuntur</p>
-                    <ul class="social-network d-flex justify-content-center">
-                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f mr-3"></i></a>
-                        </li>
-                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter mr-3"></i></a></li>
-                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fab fa-linkedin mr-3"></i></a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-            <!-- member - 2 -->
-            <div class="col-md-6 col-lg-3 col-12 card team-card" data-aos="fade-up" data-aos-delay="300"
-            data-aos-duration="1000">
-                <div class="card-body">
-                    <p class="text-center pt-2"><img class="rounded-circle" src="./images/client_img.jpeg" alt=""></p>
-                    <p class="text-2 text-muted mb-1">Project Manager</p>
-                    <h3 class="title-2">Lorem ipsum dolor</h3>
-                    <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit,Mollitia consequuntur</p>
-                    <ul class="social-network d-flex justify-content-center">
-                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f mr-3"></i></a>
-                        </li>
-                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter mr-3"></i></a></li>
-                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fab fa-linkedin mr-3"></i></a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-            <!-- member - 3 -->
-            <div class="col-md-6 col-lg-3 col-12 card team-card" data-aos="fade-up" data-aos-delay="450"
-            data-aos-duration="1000">
-                <div class="card-body">
-                    <p class="text-center pt-2"><img class="rounded-circle" src="./images/client_img.jpeg" alt=""></p>
-                    <p class="text-2 text-muted mb-1">Project Manager</p>
-                    <h3 class="title-2">Lorem ipsum dolor</h3>
-                    <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit,Mollitia consequuntur</p>
-                    <ul class="social-network d-flex justify-content-center">
-                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f mr-3"></i></a>
-                        </li>
-                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter mr-3"></i></a></li>
-                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fab fa-linkedin mr-3"></i></a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-            <!-- member - 4 -->
-            <div class="col-md-6 col-lg-3 col-12 card team-card" data-aos="fade-up" data-aos-delay="600"
-            data-aos-duration="1000">
-                <div class="card-body">
-                    <p class="text-center pt-2"><img class="rounded-circle" src="./images/client_img.jpeg" alt=""></p>
-                    <p class="text-2 text-muted mb-1">Project Manager</p>
-                    <h3 class="title-2">Lorem ipsum dolor</h3>
-                    <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit,Mollitia consequuntur</p>
-                    <ul class="social-network d-flex justify-content-center">
-                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f mr-3"></i></a>
-                        </li>
-                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter mr-3"></i></a></li>
-                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fab fa-linkedin mr-3"></i></a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
+ 
     <section class="container-fluid contact-banner wrapper pb-5" data-aos="fade-up" data-aos-delay="100"
         data-aos-duration="1000">
         <h3 class="title-1">Let's <span class="title-highlight">Connect</span></h3>
@@ -313,8 +247,91 @@
         <div class="col-12 col-md-4 d-flex justify-content-center align-items-center p-0 m-0">
         </div>
     </section>
-    <div class="mt-5" id="footer"></div>
-    <div id="chatBot"></div>
+     
+    <footer class="container-fluid footer pt-3 pb-2">
+        <div class="container row mx-auto d-flex justify-content-center justify-content-md-start">
+            <div class="col-lg-3 col-md-4 col-12 mt-1 f-phone">
+            <p class="f-title">Phone</p>
+            <p class="f-link mt-3"><a href="tel:+966552357583"><i class="fas fa-phone mr-2"></i>+966 552 357 583</a></p>         
+            </div>
+          <div class="col-lg-3 col-md-4 col-12 mt-1 f-inquiries">
+            <p class="f-title">Inquiries</p>
+            <p class="f-link mt-3"><a href="mailto:info@zyclyx.com"><i class="fas fa-envelope mr-2"></i>info@virtech-ksa.com</a></p>
+                   
+          </div>
+    
+          <div class="col-lg-3 col-md-4 col-12 mt-1 f-location">
+            <p class="f-title">Location</p>
+            <p class="f-link mt-3"><a
+              href="https://www.google.com/maps/place/Olaya+St,+Riyadh/@24.748724,46.65751,12z/data=!4m5!3m4!1s0x3e2ee380679744a9:0xf35ac2694fe69342!8m2!3d24.7487239!4d46.6575096?hl=en"><i class="fas fa-map-marker-alt mr-2"></i> Our Location</a></p>         
+          </div>
+    
+          <div class="col-lg-3 col-md-4 col-12 mt-1 f-follow">
+            <div>
+                <p class="f-title text-left">Follow us</p>
+                <ul class="social-network d-flex justify-content-start mt-3 pl-0 ">
+                  <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f mr-3"></i></a></li>
+                  <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter mr-3"></i></a></li>
+                  <li><a href="#" class="icoTwitter" title="Instagram"><i class="fab fa-instagram mr-3"></i></a></li>           
+                  <li><a href="#" class="icoLinkedin"
+                      title="Linkedin"><i class="fab fa-linkedin mr-3"></i></a></li>
+                </ul>
+            </div>        
+          </div>
+    
+    
+        </div>
+         
+        <div class="footer-copy row">
+            <p class="copy-right text-center col pt-2 mb-0">© 2018 - <span id="current-year"></span> virtech-ksa. All rights reserved</p>
+        </div>
+        
+       
+      </footer> 
+
+
+<div class="btn btn-rounded text-center bot" id="chat" onclick="show(1)">
+    <i class="fab fa-rocketchat"></i>
+</div>
+
+<div id="box1" class="chat-bot">
+    <div class="card shadow" style="max-width: 18rem;" id="bot">
+
+        <div id="close" class="card-header d-flex justify-content-between">Vbot
+            <button type="button" class="btn close" aria-label="Close" onclick="show(0)">
+                    <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="card-body" id="scroll">
+            <div class="reply-messages" id="botMessages">
+
+                <p id="botReplay">Hey I'm Vbot ! </p>
+ 
+
+            </div>
+        </div>
+        <div class="card-footer p-0 bottom-fixed">
+            <form id="bot-form">
+            <div class="input-group">
+                <input type="text" class="form-control" id="userText" placeholder="Type a Message..."
+                    aria-label="Recipient's username" aria-describedby="basic-addon2" autocomplete="off">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2">
+                        <button type="submit"class="btn sendBtn">
+                            <i class="fas fa-paper-plane text-white "></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+           </form>
+        </div>
+    </div>
+</div>
+
+      <script src="https://kit.fontawesome.com/e802a17a48.js" crossorigin="anonymous"></script>
+      <script>document.getElementById("current-year").innerHTML=new Date().getFullYear();</script>
+    
 
 
     <!-- END - FOOTER -->
@@ -333,11 +350,7 @@
       $(".se-pre-con").fadeOut("slow");
     })
    
-        $(function () {
-            $("#navbar").load("navbar.html");
-            $("#footer").load("footer.html");
-            $("#chatBot").load("chat_bot.html");
-        });
+ 
 
         window.onload = function () {
             // Initiate animate on scroll library
@@ -346,13 +359,7 @@
                 mirror: false
             });
         }
-
-        jQuery(document).ready(function($) {
-        $('[data-toggle="counter-up"]').counterUp({
-        delay: 10,
-        time: 800
-        });
-        });
+ 
     </script>
 </body>
 
