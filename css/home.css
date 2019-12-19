@@ -24,6 +24,9 @@ HOME - CAROUSEL
 #homeCarousel  .carousel-item .slide1 .img-box{
   height: 90vh;
 }
+.img-box .Blockchain{
+  transform: rotate(90deg);
+}
 
 #homeCarousel .custom-indicator{
   border-top: 1px solid rgba(170, 221, 255,0.5);   
