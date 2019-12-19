@@ -122,6 +122,7 @@ animation:caption-move-right 1.5s ease;
 #homeCarousel .carousel-caption h5{
 font-size: 2rem;      
 }
+
  /* === END - HOME CAROUSEL === */
   
 
@@ -194,6 +195,49 @@ font-size: 2rem;
 width: 100%;
 max-width: 400px;
  }
+
+/* content section */
+.img-bg{
+  position: relative;
+}
+.img-layer{
+position: relative;
+}
+.img-layer:before{
+  position: absolute;
+  content: "";
+  top:0;
+  right: 0;
+  left:0;
+  bottom:140px;
+  width: 100%;
+  background:#e6eaf1;
+  border-radius: 3px;
+  z-index:-1020 ;
+}
+.img-boxes .dot-img{
+  position: absolute;
+  left: -180px;
+  bottom: -48px;
+  z-index: -99;
+}
+
+.text-dots{
+position: absolute;
+top:-100px;
+right:-200px
+}
+/* .img-boxes .dot-img:before{
+  position: absolute;
+  content: "";
+  top:50%;
+} */
+/* .img-boxes img{
+  filter:drop-shadow(8px 8px 10px gray);
+} */
+
+/* content section End */
+
  
 /* ==== SERVICES ==== */
 .services-wrapper{ 
