@@ -529,7 +529,10 @@ transform: translate(0,-2px);
 -o-transform: translate(0,-2px);
 }
 
-@media (max-width: 575.98px) {   
+@media (max-width: 575.98px) {
+  .home-cover{
+    margin-top: 50px !important;
+  }   
   #homeCarousel  .carousel-item .content-box, #homeCarousel  .carousel-item .img-box{
     height: 40vh !important; 
   }
