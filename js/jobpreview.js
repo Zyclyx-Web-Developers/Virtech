@@ -1,9 +1,7 @@
 
 (function(){
 /*
-
 UPDATE JOB DESCRIPTION PAGE CONTENT
-
 */
 let months =  ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 let urlParams = new URLSearchParams(window.location.search);
@@ -24,11 +22,10 @@ fetch(`https://agile-plateau-09650.herokuapp.com/jobopenings/${id}`)
 .then(function(response){
   return response.json();
 })
-.then(function(data){
-   
-   //title = data.title
-
+.then(function(data){   
+//title = data.title
 //minimum qualifications
+console.log(data);
 let qualifyhtml='';
 if(data.requirements){
   for(let qalify in data.requirements){
@@ -44,7 +41,7 @@ minqualifications.innerHTML = qualifyhtml;
  
  
  
-description.textContent=data.description
+description.textContent=data.description;
 
  
 jobtitle.textContent= data.title;
