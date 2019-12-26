@@ -466,7 +466,7 @@ background-color: hsl(211, 100%, 98.5%);
   border-radius: 0.3rem;
   margin: 1rem !important;
   max-width: 300px;
-  height: 100px;
+  height: 120px;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -475,9 +475,9 @@ background-color: hsl(211, 100%, 98.5%);
 .our-clients img{     
   width: 100%;   
 }
-.our-clients .owl-item.center .client{     
+/* .our-clients .owl-item.center .client{     
   box-shadow: 0 0.125rem 0.3rem -0.0625rem rgba(0, 0, 0, 0.03),    0 0.275rem 0.75rem -0.0625rem rgba(0, 0, 0, 0.06) !important;   
-} 
+}  */
 /* 
 ==== END - CLIENT LOGOS ====
 */
