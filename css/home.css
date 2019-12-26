@@ -278,7 +278,7 @@ right:-200px
 .services-wrapper{ 
 padding-top: 3rem;  
 padding-bottom: 3rem;  
-background-color: hsl(211, 100%, 98.5%);
+background-color:hsl(180, 100%, 99.4%);
  
 } 
 .services .card{
@@ -320,7 +320,7 @@ background-color: hsl(211, 100%, 98.5%);
 }
 
 .services .service:hover .service-icon{
-    box-shadow: inset 0 0 0 70px hsl(16, 100%, 98%);;
+    box-shadow: inset 0 0 0 70px hsl(180, 100%, 99%);     
     transition: all .1s ease-in-out;
     -webkit-transition: all .1s ease-in-out;
     -moz-transition: all .1s ease-in-out;
@@ -361,9 +361,7 @@ background-color: hsl(211, 100%, 98.5%);
 /* ==== END - SERVICES ====*/
  
  /* === INDUSTRIES === */
- .industries{
-   background-color: hsl(0, 0%, 97%);
- }
+  
  .industry-cards .card img{
   height: 150px;
   transition: all 1s ease-in-out;
