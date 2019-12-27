@@ -42,30 +42,6 @@ function show(x) {
   }
 }
 
-// function show(x) {
-//   if (x == 0) {
-//     document.getElementById("box1").style.display = "none";
-//   } else {
-//     document.getElementById("box1").style.display = "inline";
-//   }
-// }
-
-// let sessionID = null;
-
-// function getNewSession(){
-//   fetch('https://pure-tor-36404.herokuapp.com/session') 
-//   .then(function(session){
-//     return session.json();
-//   })
-//   .then(function(data){     
-//     sessionID = data.session;
-//   })
-// }
-
-// if(!sessionID){
-//   getNewSession();
-// }
-
 let messagesElement = document.getElementById("botMessages");
 document
 .getElementById("bot-form")
@@ -75,7 +51,7 @@ document
   let userText = document.getElementById("userText").value;
 
   // if user input not empty send API Request to chat bot
-  if(userText !== '' && sessionID){
+  if(userText !== ''){
   messagesElement.innerHTML += `<p id="userReplay">${userText}</p>`;
   
   // disable user input
@@ -85,7 +61,7 @@ document
   <span class="sr-only">Loading...</span></span>`;
   document.getElementById("userText").value = "";
 
-
+if(sessionID){
   fetch("https://pure-tor-36404.herokuapp.com/virtech", {
     method: "post",
     headers: {
@@ -123,7 +99,6 @@ document
           }    
         }            
     })
-   
     .then(function(){
       // enable input and remove loading ...
     let userInput = document.getElementById("userText")
@@ -139,6 +114,7 @@ document
     .catch(function(error){
       console.log(error);
     })
+  }
   }
 });
 
