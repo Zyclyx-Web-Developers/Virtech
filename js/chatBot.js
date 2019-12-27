@@ -28,6 +28,7 @@ function getNewSession(){
   .then(function(){
     document.getElementById('userText').removeAttribute("disabled");
     document.querySelector('.sendBtn').removeAttribute("disabled");
+    document.getElementById('userText').focus();
     document.querySelector('.sendBtn').innerHTML = ` <i class="fas fa-paper-plane text-white"></i>`;
     if(timeOutID){
       clearTimeout(timeOutID);
@@ -42,6 +43,7 @@ function show(x) {
     isChatBotOpen = false;
   } else {
     document.getElementById("box1").style.display = "inline";
+    document.getElementById('userText').focus();
     isChatBotOpen = true;
     if(sessionID === null){
       getNewSession();
