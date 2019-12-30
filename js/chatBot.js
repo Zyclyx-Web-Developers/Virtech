@@ -16,12 +16,20 @@ function sessionTimeOut(){
 function getNewSession(){
   fetch('https://pure-tor-36404.herokuapp.com/session') 
   .then(function(session){
+    document.getElementById('userText').setAttribute("disabled", true);
+    document.querySelector('.sendBtn').setAttribute("disabled", true);
+    document.querySelector('.sendBtn').innerHTML = `<span class="spinner-border spinner-border-sm text-white" role="status">
+    <span class="sr-only">Loading...</span></span>`;
     return session.json();
   })
   .then(function(data){     
     sessionID = data.session;     
   })
   .then(function(){
+    document.getElementById('userText').removeAttribute("disabled");
+    document.querySelector('.sendBtn').removeAttribute("disabled");
+    document.getElementById('userText').focus();
+    document.querySelector('.sendBtn').innerHTML = ` <i class="fas fa-paper-plane text-white"></i>`;
     if(timeOutID){
       clearTimeout(timeOutID);
     }
@@ -35,36 +43,13 @@ function show(x) {
     isChatBotOpen = false;
   } else {
     document.getElementById("box1").style.display = "inline";
+    document.getElementById('userText').focus();
     isChatBotOpen = true;
     if(sessionID === null){
       getNewSession();
     }
   }
 }
-
-// function show(x) {
-//   if (x == 0) {
-//     document.getElementById("box1").style.display = "none";
-//   } else {
-//     document.getElementById("box1").style.display = "inline";
-//   }
-// }
-
-// let sessionID = null;
-
-// function getNewSession(){
-//   fetch('https://pure-tor-36404.herokuapp.com/session') 
-//   .then(function(session){
-//     return session.json();
-//   })
-//   .then(function(data){     
-//     sessionID = data.session;
-//   })
-// }
-
-// if(!sessionID){
-//   getNewSession();
-// }
 
 let messagesElement = document.getElementById("botMessages");
 document
@@ -84,7 +69,6 @@ document
   document.querySelector('.sendBtn').innerHTML = `<span class="spinner-border spinner-border-sm text-white" role="status">
   <span class="sr-only">Loading...</span></span>`;
   document.getElementById("userText").value = "";
-
 
   fetch("https://pure-tor-36404.herokuapp.com/virtech", {
     method: "post",
@@ -123,7 +107,6 @@ document
           }    
         }            
     })
-   
     .then(function(){
       // enable input and remove loading ...
     let userInput = document.getElementById("userText")
