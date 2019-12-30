@@ -166,9 +166,7 @@
 .btn-breach:hover::after {
   transform: translateX(-360%) skewX(60deg);
 }
-/* box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.06); */
-
-/* 
+/*
 ==== END - BOXSHADOWS ====
 */
 
@@ -931,10 +929,7 @@ color: #008080;
   margin: 0 -60px;
 }
 .circle {
-  /* position:relative; */
-  /* padding: 20px; */
   width: 120px;
-  /* height: 120px; */
   border-radius: 50%;
   background-color: #eee;
   border: solid 1px #ddd;
@@ -945,13 +940,7 @@ color: #008080;
 text-align: center;
   margin:0px 45px;
   border-bottom: 1px solid rgba(34, 45, 165,0.2);
-  /* box-shadow:inset 0 0 0 1px rgba(34, 45, 165,0.2) */
 }
-/* #wrapper {
-  width: 680px;
-  display:table;
-  margin: auto;
-} */
 #wrapper > div {
   display: inline-block;
   
