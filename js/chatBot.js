@@ -28,14 +28,10 @@ function getNewSession(){
     let userInput = document.getElementById("userText")
     userInput.removeAttribute("disabled");
     document.querySelector('.sendBtn').removeAttribute("disabled");
-    document.querySelector('.sendBtn').innerHTML = ` <i class="fas fa-paper-plane text-white"></i>`;
+    document.querySelector('.sendBtn').innerHTML = ` <img src="./images/icons/plane.svg" alt="send">`;
     userInput.focus();       
   })
   .then(function(){
-    document.getElementById('userText').removeAttribute("disabled");
-    document.querySelector('.sendBtn').removeAttribute("disabled");
-    document.getElementById('userText').focus();
-    document.querySelector('.sendBtn').innerHTML = ` <i class="fas fa-paper-plane text-white"></i>`;
     if(timeOutID){
       clearTimeout(timeOutID);
     }
@@ -118,7 +114,7 @@ document
     let userInput = document.getElementById("userText")
     userInput.removeAttribute("disabled");
     document.querySelector('.sendBtn').removeAttribute("disabled");
-    document.querySelector('.sendBtn').innerHTML = ` <i class="fas fa-paper-plane text-white"></i>`;
+    document.querySelector('.sendBtn').innerHTML = `<img src="./images/icons/plane.svg" alt="send">`;
     userInput.focus();
     })
     .then(function(){
