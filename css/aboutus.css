@@ -31,7 +31,10 @@
     -ms-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
 }
-
+.vision-container{
+  background-color: hsl(180, 100%, 97%);
+}
+ 
 .how-we-do .card {
   border: none;
 }
