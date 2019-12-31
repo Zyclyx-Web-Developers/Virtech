@@ -938,6 +938,9 @@ color: #008080;
   outline: none;
   border: none;
 }
+.chat-bot #basic-addon2{
+   min-width: 38px;
+}
 .chat-bot .sendBtn:focus{
   box-shadow: none;
 }
