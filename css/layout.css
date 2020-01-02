@@ -852,6 +852,15 @@ color: #008080;
   outline: none;
   border-radius: 0px;
   padding: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  transition: all 0.7s ease-out;
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -ms-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
 }
 
 .chat-bot .form-control {
@@ -876,8 +885,8 @@ color: #008080;
   color: #fff;
   font-size: 25px;
   border-radius: 50%;
-  padding: 10px;   
-  position: fixed;   
+  padding: 10px;
+  position: fixed;
   height: 50px;
   width: 50px;
   display: flex;
@@ -889,8 +898,12 @@ color: #008080;
   cursor: pointer;
   box-shadow: 0 0 0 0.4em transparent;
   animation: btn-pulse 1s infinite;
-  -webkit-animation: btn-pulse 1s infinite; 
-  z-index: 99; 
+  -webkit-animation: btn-pulse 1s infinite;
+  z-index: 99;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 .bot:hover{
   border: 2px solid hsl(180, 100%, 15%);
@@ -944,54 +957,7 @@ color: #008080;
 .chat-bot .sendBtn:focus{
   box-shadow: none;
 }
-
-
-.line-top {
-  width: 120px;
-  height:60px;
-  z-index: -1;
-  background: transparent;
-  border: none;
-  border-top: dashed 2px #ea981e7a;
-  padding: 40px 40px;
-  border-radius: 50%;
-  margin: 20px -56px 0;
- 
-}
-.line-bottom {
-  width: 120px;
-  height:40px;
-  z-index: -1;
-  background: transparent;
-  border: none;
-  border-bottom: dashed 2px hsla(229, 79%, 74%, 0.478);  
-  padding: 40px 40px;
-  border-radius: 0 0 50% 50%;
-  margin: 0 -60px;
-}
-.circle {
-  /* position:relative; */
-  /* padding: 20px; */
-  width: 120px;
-  /* height: 120px; */
-  border-radius: 50%;
-  background-color: #eee;
-  border: solid 1px #ddd;
-  z-index: 999;
-  margin: 20px;
-}
-.count{
-text-align: center;
-  margin:0px 45px;
-  border-bottom: 1px solid rgba(34, 45, 165,0.2);
-  /* box-shadow:inset 0 0 0 1px rgba(34, 45, 165,0.2) */
-}
-/* #wrapper {
-  width: 680px;
-  display:table;
-  margin: auto;
-} */
-#wrapper > div {
-  display: inline-block;
-  
+.spinner-border-sm{
+  height: 1.1em;
+  width: 1.1em;
 }

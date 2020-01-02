@@ -4,8 +4,16 @@ let timeOutID = null;
 
 document.getElementById('userText').setAttribute("disabled", true);
 document.querySelector('.sendBtn').setAttribute("disabled", true);
-document.querySelector('.sendBtn').innerHTML = `<span class="spinner-border spinner-border-sm text-white" role="status">
+document.querySelector('.sendBtn').innerHTML = `<span class="spinner-border spinner-border-sm  text-white" role="status">
 <span class="sr-only">Loading...</span></span>`;
+
+fetch('https://pure-tor-36404.herokuapp.com/') 
+  .then(function(res){    
+    return res.json();
+  })
+  .then(function(res){
+    console.log(res);
+  })
 
 // reset session after 5 minutes
 function sessionTimeOut(){
