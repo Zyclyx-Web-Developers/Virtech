@@ -12,9 +12,6 @@ fetch('https://pure-tor-36404.herokuapp.com/')
   .then(function(res){    
     return res.json();
   })
-  .then(function(res){
-    console.log(res);
-  })
 
 // reset session after 5 minutes
 function sessionTimeOut(){
