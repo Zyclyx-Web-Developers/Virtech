@@ -2,6 +2,11 @@ let isChatBotOpen = false;
 let sessionID = null;
 let timeOutID = null;
 
+document.getElementById('userText').setAttribute("disabled", true);
+document.querySelector('.sendBtn').setAttribute("disabled", true);
+document.querySelector('.sendBtn').innerHTML = `<span class="spinner-border spinner-border-sm text-white" role="status">
+<span class="sr-only">Loading...</span></span>`;
+
 // reset session after 5 minutes
 function sessionTimeOut(){
   timeOutID=setTimeout(function(){     
@@ -15,21 +20,18 @@ function sessionTimeOut(){
 // create a session 
 function getNewSession(){
   fetch('https://pure-tor-36404.herokuapp.com/session') 
-  .then(function(session){
-    document.getElementById('userText').setAttribute("disabled", true);
-    document.querySelector('.sendBtn').setAttribute("disabled", true);
-    document.querySelector('.sendBtn').innerHTML = `<span class="spinner-border spinner-border-sm text-white" role="status">
-    <span class="sr-only">Loading...</span></span>`;
+  .then(function(session){    
     return session.json();
   })
-  .then(function(data){     
-    sessionID = data.session;     
+  .then(function(data){        
+    sessionID = data.session;
+    let userInput = document.getElementById("userText")
+    userInput.removeAttribute("disabled");
+    document.querySelector('.sendBtn').removeAttribute("disabled");
+    document.querySelector('.sendBtn').innerHTML = ` <img src="./images/icons/plane.svg" alt="send">`;
+    userInput.focus();       
   })
   .then(function(){
-    document.getElementById('userText').removeAttribute("disabled");
-    document.querySelector('.sendBtn').removeAttribute("disabled");
-    document.getElementById('userText').focus();
-    document.querySelector('.sendBtn').innerHTML = ` <i class="fas fa-paper-plane text-white"></i>`;
     if(timeOutID){
       clearTimeout(timeOutID);
     }
@@ -112,7 +114,7 @@ document
     let userInput = document.getElementById("userText")
     userInput.removeAttribute("disabled");
     document.querySelector('.sendBtn').removeAttribute("disabled");
-    document.querySelector('.sendBtn').innerHTML = ` <i class="fas fa-paper-plane text-white"></i>`;
+    document.querySelector('.sendBtn').innerHTML = `<img src="./images/icons/plane.svg" alt="send">`;
     userInput.focus();
     })
     .then(function(){
