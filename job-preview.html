@@ -4,115 +4,121 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />   
-  <link rel="apple-touch-icon" href="./favicon.png">   
+  <meta name="description" content="Open Job Positions" />
+  <meta name="keywords" content="Job Preview, Job Details, Job Inforamtion, Open Position" />
+  <link rel="apple-touch-icon" href="./favicon.png">
   <link rel="icon" href="./favicon.png">
-  <title>Job Preview - Zyclyx</title>   
+  <title>Open Job Position Details - Virtech Technologies</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />   
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" href="./css/layout.css">
   <link rel="stylesheet" href="./css/job-preview.css" />
   <style>
-  .error{
-      color:red;
+    .error {
+      color: red;
       font-size: 10px;
-    }  
-  
+    }
   </style>
 
   <!-- google Analytics -->
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154979814-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154979814-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-154979814-2');
-</script>
+    gtag('config', 'UA-154979814-2');
+  </script>
 
-<!-- Google Analytics End -->
+  <!-- Google Analytics End -->
 </head>
+
 <body class="text-center">
-    <div class="se-pre-con"></div>
+  <div class="se-pre-con"></div>
   <div>
     <!-- 
       ====== Navbar ======
     -->
     <header class="main-navbar">
-        <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-dark site-navbar navbar-inner" id="navbarMaster">
-          <a class="navbar-brand ml-md-4" href="./index.html">
-            <img src="./images/Virtech-ksa-logo.png" alt="Zyclyx Logo" id="navbarLogo">
-          </a>
-          <button class="navbar-toggler hamburger hamburger--squeeze is-active" type="button" data-toggle="collapse" data-target="#navbar-master"
-          aria-controls="navbar-master" aria-expanded="false" aria-label="Toggle navigation">                  
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>         
+      <nav class="navbar navbar-expand-lg master-nav fixed-top navbar-dark site-navbar navbar-inner" id="navbarMaster">
+        <a class="navbar-brand ml-md-4" href="/">
+          <img src="./images/Virtech-ksa-logo.png" alt="Zyclyx Logo" id="navbarLogo">
+        </a>
+        <button class="navbar-toggler hamburger hamburger--squeeze is-active" type="button" data-toggle="collapse"
+          data-target="#navbar-master" aria-controls="navbar-master" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
         </button>
-          <div class="collapse navbar-collapse" id="navbar-master">
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-md-4">
-              <!--  home -->
-              <li class="nav-item active mx-2 py-3">
-                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-  
-  
-              <!-- services -->
-              <li class="nav-item dropdown mx-2 py-3">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuIndustry" role="button"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Services
-                </a>
-                <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuIndustry">
-                  <a class="dropdown-item my-1 py-1" href="./RPA.html">Robotic Process Automation</a>
-                  <a class="dropdown-item my-1 py-1" href="./AI.html">Artificial Intelligence</a>              
-                  <a class="dropdown-item my-1 py-1" href="./Blockchain.html">BlockChain</a>
-                  <a class="dropdown-item my-1 py-1" href="./Bigdata.html">Big Data</a>
-                  <a class="dropdown-item my-1 py-1" href="./IoT.html">Internet Of Things</a>
-                  <a class="dropdown-item my-1 py-1" href="./Cyber-security-services.html">Cyber Security</a>
-                  <a class="dropdown-item my-1 py-1" href="./Application-Development.html">Application Development</a>
-                  <a class="dropdown-item my-1 py-1" href="./Digital-Marketing.html">Digital Marketing</a>
-                </div>
-              </li>
-  
-              <!-- About us -->
-              <li class="nav-item dropdown mx-2 py-3">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuAbout" role="button"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  About us
-                </a>
-                <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuAbout">
-                  <a class="dropdown-item my-1 py-1" href="./why-virtech.html">Why Virtech</a>
-                  <a class="dropdown-item my-1 py-1" href="./aboutus.html">About Us</a>
-                </div>
-              </li>
-  
-              <!-- careers -->
-              <li class="nav-item mx-2 py-3">
-                <a class="nav-link" href="./careers.html">Careers</a>
-              </li>
-              <!-- contact us -->
-              <li class="nav-item mx-2 py-3">
-                <a class="nav-link" href="./contactus.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+        <div class="collapse navbar-collapse" id="navbar-master">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-md-4">
+            <!--  home -->
+            <li class="nav-item active mx-2 py-3">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+
+
+            <!-- services -->
+            <li class="nav-item dropdown mx-2 py-3">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuIndustry" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+              <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuIndustry">
+                <a class="dropdown-item my-1 py-1" href="./RPA.html">Robotic Process Automation</a>
+                <a class="dropdown-item my-1 py-1" href="./AI.html">Artificial Intelligence</a>
+                <a class="dropdown-item my-1 py-1" href="./Blockchain.html">BlockChain</a>
+                <a class="dropdown-item my-1 py-1" href="./Bigdata.html">Big Data</a>
+                <a class="dropdown-item my-1 py-1" href="./IoT.html">Internet Of Things</a>
+                <a class="dropdown-item my-1 py-1" href="./Cyber-security-services.html">Cyber Security</a>
+                <a class="dropdown-item my-1 py-1" href="./Application-Development.html">Application Development</a>
+                <a class="dropdown-item my-1 py-1" href="./Digital-Marketing.html">Digital Marketing</a>
+              </div>
+            </li>
+
+            <!-- About us -->
+            <li class="nav-item dropdown mx-2 py-3">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuAbout" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About us
+              </a>
+              <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuAbout">
+                <a class="dropdown-item my-1 py-1" href="./why-virtech.html">Why Virtech</a>
+                <a class="dropdown-item my-1 py-1" href="./aboutus.html">About Us</a>
+              </div>
+            </li>
+
+            <!-- careers -->
+            <li class="nav-item mx-2 py-3">
+              <a class="nav-link" href="./careers.html">Careers</a>
+            </li>
+            <!-- contact us -->
+            <li class="nav-item mx-2 py-3">
+              <a class="nav-link" href="./contactus.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <!-- 
       ====== END Navbar ======
-    --> 
+    -->
     <section class="container-fluid header-img overlay">
-        <h1 class="header-title">Want to work with us?</h1> 
+      <h1 class="header-title">Want to work with us?</h1>
     </section>
     <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="./index.html"><i class="fa fa-home mr-2"></i>Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Job Details</li>
-        </ol>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/" class="d-flex justify-content-center align-items-center"><svg
+              class="mr-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="18" height="18" viewBox="0 0 18 18">
+              <path fill="#008080" d="M16 9.226l-8-6.21-8 6.21v-2.532l8-6.21 8 6.21zM14 9v6h-4v-4h-4v4h-4v-6l6-4.5z">
+              </path>
+            </svg>Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Job Details</li>
+      </ol>
     </nav>
     <!--end of section-->
     <section class="job-preview py-4">
@@ -127,128 +133,127 @@
           <div class="col-12 col-lg-8 order-2 order-sm-1">
             <article class="text-2">
 
-              <h5 class="py-2 title-3" >Description</h5>
-               <p id="description">
-                
+              <h5 class="py-2 title-3">Description</h5>
+              <p id="description">
+
               </p>
               <!-- Requirements -->
               <h5 class="py-2 title-3">Requirements</h5>
               <ul class="text-2 job-desc-list" id="qualifications">
               </ul>
-               <!-- Responsibilities  -->
+              <!-- Responsibilities  -->
               <h5 class="py-2 title-3">Responsibilities</h5>
               <ul class="text-2 job-desc-list" id="responsibilities">
-                
-              </ul>
-              
 
-            </article>             
+              </ul>
+
+
+            </article>
           </div>
           <div class="col-12 col-lg-4 order-1 order-sm-2">
-              <div class="m-4 p-2">               
-                  <a href="#applicationForm" class="btn btn-primary btn-block btn-shadow-primary">Apply Now</a>               
-              </div>
-              <div class="card">
-                <div class="card-header d-flex justify-content-between">
-                  <div>
-                    <span class="text-1">Job Details</span>
-                  </div>
+            <div class="m-4 p-2">
+              <a href="#applicationForm" class="btn btn-primary btn-block btn-shadow-primary">Apply Now</a>
+            </div>
+            <div class="card">
+              <div class="card-header d-flex justify-content-between">
+                <div>
+                  <span class="text-1">Job Details</span>
                 </div>
-                <div class="card-body text-3">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                      <div class="d-flex justify-content-between text-2 capitalize" >
-                        <span>Location</span>
-                        <span id="location" class="font-weight-bolder text-capitalize"></span>
+              </div>
+              <div class="card-body text-3">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <div class="d-flex justify-content-between text-2 capitalize">
+                      <span>Location</span>
+                      <span id="location" class="font-weight-bolder text-capitalize"></span>
 
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex justify-content-between capitalize">
-                        <span>Job Type</span>
-                        <span id='jobtype' class="font-weight-bolder text-capitalize"></span>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="d-flex justify-content-between capitalize">
+                      <span>Experience</span>
+                      <span id='experience' class="font-weight-bolder text-capitalize"> - </span>
 
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex justify-content-between capitalize">
-                        <span>Date Posted</span>
-                        <span id="startDate" class="font-weight-bolder text-capitalize"></span>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="d-flex justify-content-between capitalize">
+                      <span>Salary</span>
+                      <span id="salary" class="font-weight-bolder text-capitalize"> - </span>
 
-                      </div>
-                    </li> 
-                    <li class="list-group-item">
+                    </div>
+                  </li>
+                  <!-- <li class="list-group-item">
                         <div class="d-flex justify-content-between capitalize">
                           <div>Closing Date</div>
                           <span id="closeDate" class="font-weight-bolder text-capitalize"></span>
 
                         </div>
-                      </li>
-                  </ul>
+                      </li> -->
+                </ul>
+              </div>
+            </div>
+            <!-- END - JOB Details card-->
+
+            <!-- Address Card -->
+            <div class="card my-5 text-2 address-card">
+              <div class="card-header d-flex justify-content-between">
+                <div>
+                  <span class="text-1">Need Help?</span>
                 </div>
               </div>
-              <!-- END - JOB Details card-->
-  
-              <!-- Address Card -->
-              <div class="card my-5 text-2 address-card">
-                <div class="card-header d-flex justify-content-between">
-                  <div>
-                    <span class="text-1">Need Help?</span>
-                  </div>
-                </div>
-                <div class="card-body address">
-                  <p class="d-flex"><i class="fa fa-map-marker m-3"></i> <span>International Virtual Technology Company PO Box: 23754, Riyadh Kingdom of Saudi Arabia - 11611.</span></p>
-                  <p><i class="fa fa-envelope m-3"></i>info@virtech-ksa.com</p>
-                  <p><i class="fa fa-phone m-3"></i>+966 552 357 583</p>
-                </div>
+              <div class="card-body address">
+                <p class="d-flex"><i class="fa fa-map-marker m-3"></i> <span>International Virtual Technology Company PO
+                    Box: 23754, Riyadh Kingdom of Saudi Arabia - 11611.</span></p>
+                <p><i class="fa fa-envelope m-3"></i>info@virtech-ksa.com</p>
+                <p><i class="fa fa-phone m-3"></i>+966 552 357 583</p>
               </div>
+            </div>
           </div>
         </div>
         <!--end of row-->
       </div>
-      <!-- JOB APPLICATION FORM -->        
-      <div class="container row mx-auto pt-5" id="applicationForm">        
+      <!-- JOB APPLICATION FORM -->
+      <div class="container row mx-auto pt-5" id="applicationForm">
         <div class="col-12 col-md-10 mx-auto">
-            <h3 class="title-2 text-center">Apply for this Job</h3>
+          <h3 class="title-2 text-center">Apply for this Job</h3>
           <span id="errorAlert"></span>
           <form id="jobApplication" class="needs-validation mb-3" novalidate="">
-                <div class="row pt-5">
+            <div class="row pt-5">
 
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="firstname" class="text-2">FirstName:&nbsp;<span
-                                    class="text-danger">*</span></label>
-                            <input class="form-control" name="firstname" type="text" id="firstname" placeholder="" required="">
-                           <span class="error" id="error1"></span>
-                        </div>
-                    </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="firstname" class="text-2">FirstName:&nbsp;<span class="text-danger">*</span></label>
+                  <input class="form-control" name="firstname" type="text" id="firstname" placeholder="" required="">
+                  <span class="error" id="error1"></span>
+                </div>
+              </div>
 
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="lastname" class="text-2">LastName:&nbsp;<span
-                                    class="text-danger">*</span></label>
-                            <input class="form-control" name="lastname" type="text" id="lastname" placeholder="" required="">
-                            <span class="error" id="error2"></span>
-                        </div>
-                    </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="lastname" class="text-2">LastName:&nbsp;<span class="text-danger">*</span></label>
+                  <input class="form-control" name="lastname" type="text" id="lastname" placeholder="" required="">
+                  <span class="error" id="error2"></span>
+                </div>
+              </div>
 
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="email" class="text-2">Email&nbsp;<span
-                                    class="text-danger">*</span></label>
-                            <input class="form-control" name="email" type="text" id="email" placeholder="" required="" autocomplete="off">
-                            <span class="error" id="error3"></span>
-                        </div>
-                    </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="email" class="text-2">Email&nbsp;<span class="text-danger">*</span></label>
+                  <input class="form-control" name="email" type="text" id="email" placeholder="" required=""
+                    autocomplete="off">
+                  <span class="error" id="error3"></span>
+                </div>
+              </div>
 
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="phone" class="text-2">Phone Number</label>
-                            <input class="form-control" name="phone" type="text" id="phone" placeholder="">
-                            <span class="error" id="error4"></span>
-                        </div>
-                    </div>
-
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="phone" class="text-2">Phone Number</label>
+                  <input class="form-control" name="phone" type="text" id="phone" placeholder="">
+                  <span class="error" id="error4"></span>
+                </div>
+              </div>
+              <!-- 
                     <div class="col-sm-6">
                       <div class="form-group">
                           <p class="text-left mb-2 text-2">Resume <span class="text-danger">*</span></p>
@@ -258,44 +263,45 @@
                               <span class="error" id="error5"></span>
                             </div>
                       </div>                                              
-                    </div>
+                    </div> -->
 
-                    <div class="col-sm-12">
-                    <div class="form-group">
-                        <label for="message" class="text-2">Message:&nbsp;<span class="text-danger">*</span></label>
-                        <textarea class="form-control" name="message" id="message" rows="4"
-                            placeholder="Where do you see yourself in years?" required=""></textarea>
-                            <span class="error" id="error6"></span>
-                    </div>
-                  </div>
-
+              <div class="col-sm-12 pt-2">
+                <div class="form-group">
+                  <label for="message" class="text-2">Message:&nbsp;<span class="text-danger">*</span></label>
+                  <textarea class="form-control" name="message" id="message" rows="4"
+                    placeholder="Where do you see yourself in years?" required=""></textarea>
+                  <span class="error" id="error6"></span>
                 </div>
+              </div>
 
-                <button id="submitApplicationButton" class="btn btn-primary btn-shadow-primary pt-2 mt-2" type="submit">
-                   <span id="btnText">Submit Application <i class="ml-2 far fa-paper-plane"></i></span> 
-                   <span id="btnSpinner" class="spinner-border spinner-border-sm ml-2" role="status"
-                   aria-hidden="true"></span>
-                </button>
-            </form>
+            </div>
+
+            <button id="submitApplicationButton" class="btn btn-primary btn-shadow-primary btn-lg pt-2 mt-2"
+              type="submit">
+              <span id="btnText">Submit Application <i class="ml-2 far fa-paper-plane"></i></span>
+              <span id="btnSpinner" class="spinner-border spinner-border-sm ml-2" role="status"
+                aria-hidden="true"></span>
+            </button>
+          </form>
         </div>
       </div>
 
       <!-- Contact form Modal -->
       <div class="modal" tabindex="-1" role="dialog" id="JobApplicationModal">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">                             
+          <div class="modal-content">
             <div class="modal-body">
               <p>All The Best, <span id="contactName"></span></p>
-              <p>We Recieved your application!</p>                               
+              <p>We Recieved your application!</p>
             </div>
-            <div class="modal-footer">                                     
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>                            
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
       </div>
-     <!-- END - contact form modal -->
-       <!-- END - JOB APPLICATION FORM -->
+      <!-- END - contact form modal -->
+      <!-- END - JOB APPLICATION FORM -->
     </section>
     <footer class="container-fluid footer pt-3 pb-2">
       <div class="container row mx-auto d-flex justify-content-center justify-content-md-start">
@@ -312,17 +318,17 @@
         <div class="col-lg-3 col-md-4 col-12 mt-1 f-inquiries">
           <p class="f-title">Enquiries</p>
           <p class="f-link mt-3"><a href="mailto:info@virtech-ksa.com">
-              <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 class="feather feather-mail">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
                 </path>
                 <polyline points="22,6 12,13 2,6"></polyline>
               </svg>info@virtech-ksa.com</a>
           </p>
-  
+
         </div>
-  
+
         <div class="col-lg-3 col-md-4 col-12 mt-1 f-location">
           <p class="f-title">Location</p>
           <p class="f-link mt-3"><a
@@ -334,7 +340,7 @@
                 </path>
               </svg> Our Location</a></p>
         </div>
-  
+
         <div class="col-lg-3 col-md-4 col-12 mt-1 f-follow">
           <div>
             <p class="f-title text-left">Follow us</p>
@@ -373,67 +379,61 @@
       </div>
     </footer>
     <!-- Chat Bot -->
-    
-<div class="btn btn-rounded text-center bot" id="chat" onclick="show(1)">
-  <i class="fab fa-rocketchat"></i>
-</div>
+    <div class="btn btn-rounded text-center bot" id="chat" onclick="show(1)">
+      <img src="./images/icons/rocketchat-brands.svg" alt="Hi">
+    </div>
 
-<div id="box1" class="chat-bot">
-  <div class="card shadow" style="max-width: 18rem;" id="bot">
-      <div id="close" class="card-header d-flex justify-content-between">Zybot
+    <div id="box1" class="chat-bot">
+      <div class="card shadow" id="bot">
+        <div id="close" class="card-header d-flex justify-content-between">Vbot
           <button type="button" class="btn close" aria-label="Close" onclick="show(0)">
-                  <i class="fas fa-times"></i>
+            <img src="./images/icons/x.svg" alt="X">
           </button>
-      </div>
+        </div>
 
-      <div class="card-body chatBot" id="scroll">
+        <div class="card-body chatBot" id="scroll">
           <div class="reply-messages" id="botMessages">
-
-              <p id="botReplay">Hey I'm Zybot ! </p>
-              <!-- <p id="useTime"></p> -->
-
-              <!-- <p id="userReplay">Hi </p> -->
-              <!-- <p id="useTime"></p>-->
-
+            <p id="botReplay">Hey I'm Vbot ! </p>
           </div>
-      </div>
-      <div class="card-footer p-0 bottom-fixed">
+        </div>
+        <div class="card-footer p-0 bottom-fixed">
           <form id="bot-form">
-          <div class="input-group">
+            <div class="input-group">
               <input type="text" class="form-control" id="userText" placeholder="Type a Message..."
-                  aria-label="Recipient's username" aria-describedby="basic-addon2" autocomplete="off">
+                aria-label="Recipient's username" aria-describedby="basic-addon2" autocomplete="off">
               <div class="input-group-append">
-                  <span class="input-group-text" id="basic-addon2">
-                      <button type="submit"class="btn sendBtn">
-                          <i class="fas fa-paper-plane text-white"></i>
-                      </button>
-                  </span>
+                <span class="input-group-text" id="basic-addon2">
+                  <button type="submit" class="btn sendBtn">
+                    <img src="./images/icons/plane.svg" alt="send">
+                  </button>
+                </span>
               </div>
-          </div>
-         </form>
+            </div>
+          </form>
+        </div>
       </div>
+    </div>
   </div>
-</div>
-  </div>
- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
- integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
- <script src="./js/jobpreview.js"></script>
- <script src="https://kit.fontawesome.com/e802a17a48.js" crossorigin="anonymous"></script>  
- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
- integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
- crossorigin="anonymous"></script>
- <script src="./js/vendor/aos.js"></script>
-<script src="./js/chatBot.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="./js/jobpreview.js"></script>
+  <script src="https://kit.fontawesome.com/e802a17a48.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="./js/vendor/aos.js"></script>
+  <script src="./js/chatBot.js"></script>
 
-<script>
-   $(document).ready(function () {
-     $(".se-pre-con").fadeOut("slow");
-     AOS.init({
-       once: true,
-       mirror: false
-     });
-     document.getElementById("current-year").innerHTML = new Date().getFullYear();
-   });
- </script> 
+  <script>
+    $(document).ready(function () {
+      $(".se-pre-con").fadeOut("slow");
+      AOS.init({
+        once: true,
+        mirror: false
+      });
+      document.getElementById("current-year").innerHTML = new Date().getFullYear();
+    });
+  </script>
 </body>
+
 </html>
