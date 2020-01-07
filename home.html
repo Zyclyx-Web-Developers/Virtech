@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">    
+    <title>Hello, world!</title>
+    <style>
+    .carousel-inner{
+        max-height: 100vh;
+    }
+    .item{
+        height: 100vh;
+        color: #ffffff;
+    }
+    .item-1,.item-3{
+        background-color: #39405b;
+    }
+    .item-2,.item-4{
+        background-color: #535663;
+    }
+    .slide-text{
+        padding-left: 6rem;
+    }
+    .slide-img img{
+        max-width: 70%;
+    }
+    .item h2{
+        font-size: 3rem;
+    }
+    .item p{
+        font-size: 1.5rem;
+    }
+    .item-2 .slide-img img, .item-3 .slide-img img, .item-4 .slide-img img{
+        mix-blend-mode:luminosity;
+    }
+    .carousel-control-next{
+        top: 90% !important;         
+    }
+    .carousel-control-prev{
+        top: 90%;
+        left:unset;
+        right: 5% !important;
+    }
+    .carousel-indicators{
+        flex-direction: column; 
+        margin-left: 2%;
+        bottom: unset;
+        top: 30%;
+    }
+    .carousel-indicators li{
+        margin: 0;
+        width: 2px;
+        height: 70px;
+    }
+    .carousel-social-links{
+        position: absolute;
+        bottom: 10px;
+        left: 2%;
+        z-index: 1; 
+        margin: 0;   
+        padding: 0;     
+    }
+    .carousel-social-links li{
+    list-style-type: none;
+    color: #ffffff;
+    font-size: 1rem;
+    margin: 10px 0;
+    }
+    .carousel-indicators .active {
+        background-color: #309bbc;
+        transition: all 1s ease-out;
+    }
+    .slide-text-inner{         
+         position: relative;
+    }
+    .slide-text-inner:before{
+        content: "";
+        position:absolute;         
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color:#39405b;
+        z-index: 2;
+        animation: reveal-text 1.4s ease-out 0.3s normal both,hide-text 1.4s ease-in 3.5s;
+    }
+    .item-2 .slide-text-inner:before,.item-4 .slide-text-inner:before{
+        background-color: #535663;
+    }   
+    @keyframes reveal-text {
+        0%{
+            width: 100%;             
+        }
+        100%{
+            width: 0%;         
+        }
+    }
+    @keyframes hide-text {
+        0%{
+            width: 0%;             
+        }
+        100%{
+            width: 1000%;
+        }
+    }    
+    </style>
+  </head>
+  <body>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <ul class="carousel-social-links">
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-linkedin-in"></i></li>
+        </ul>
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active">
+             <div class="item item-1">
+                 <div class="row d-flex justify-content-center align-items-center mx-auto h-100">
+                     <div class="col-6 slide-text">
+                        <div class="slide-text-inner">
+                            <h2 class="">Robotic Process Automation</h2>
+                            <p>Deploy cutting edge technology, optimize customer experience, automate the process and ensure
+                                business continuity</p>
+                        </div>                        
+                     </div>
+                     <div class="col-6 slide-img d-flex justify-content-center align-items-center">
+                        <img class="w-100" src="./images/new-home-pic/Blockchain.svg" alt="">
+                     </div>
+                 </div>
+             </div>
+          </div>
+          <div class="carousel-item">
+             <div class="item item-2">
+                 <div class="row d-flex justify-content-center align-items-center mx-auto h-100">
+                    <div class="col-6 slide-text">
+                        <div class="slide-text-inner">
+                            <h2>AI & Machine Learning</h2>
+                        <p>We apply our technical expertise and consultative approach to best meet your technology and
+                            automation
+                            goals</p>
+                        </div>                        
+                    </div>
+                    <div class="col-6 slide-img d-flex justify-content-center align-items-center">
+                        <img class="w-100" src="./img/42271822770_6d2a1d533f_w.jpg" alt="">
+                    </div>
+                 </div>
+             </div>
+          </div>
+          <div class="carousel-item">
+             <div class="item item-3">
+                 <div class="row d-flex justify-content-center align-items-center mx-auto h-100">
+                     <div class="col-6 slide-text">
+                         <div class="slide-text-inner">
+                            <h2>New Age Technologies</h2>
+                        <p>Industry knowledge, functional experience, and technology skills to help clients grow and create
+                           long-lasting value</p>
+                         </div>                    
+                     </div>
+                     <div class="col-6 slide-img d-flex justify-content-center align-items-center">
+                        <img class="w-100" src="./images/new-home-pic/EP.svg" alt="">
+                     </div>
+                 </div>
+
+             </div>
+          </div>
+          <div class="carousel-item">
+            <div class="item item-4">
+                <div class="row d-flex justify-content-center align-items-center mx-auto h-100">
+                    <div class="col-6 slide-text">
+                        <div class="slide-text-inner">
+                            <h2>Blockchain Solutions</h2>
+                            <p>Full-service custom application development to meet the specific functional needs of enterprise customers</p>
+                        </div>                        
+                    </div>
+                    <div class="col-6 slide-img d-flex justify-content-center align-items-center">
+                        <img class="w-100" src="./images/new-home-pic/IOT.svg" alt="">
+                    </div>
+                </div>
+                
+            </div>
+         </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+         <span>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="50" height="50"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M68.155,45.0425c-0.7525,0.13438 -1.42437,0.51063 -1.935,1.075l-37.5175,37.41l-2.365,2.4725l2.365,2.4725l37.5175,37.41c0.83313,1.02125 2.16344,1.49156 3.45344,1.19594c1.27656,-0.29562 2.28438,-1.30344 2.58,-2.58c0.29563,-1.29 -0.17469,-2.62031 -1.19594,-3.45344l-31.605,-31.605h101.5875c1.23625,0.01344 2.39188,-0.63156 3.02344,-1.70656c0.61813,-1.075 0.61813,-2.39187 0,-3.46687c-0.63156,-1.075 -1.78719,-1.72 -3.02344,-1.70656h-101.5875l31.605,-31.605c1.11531,-1.03469 1.41094,-2.67406 0.73906,-4.03125c-0.65844,-1.37062 -2.15,-2.12312 -3.64156,-1.88125z"></path></g></g></svg>
+         </span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="50" height="50"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M102.6625,45.0425c-1.29,0.22844 -2.32469,1.16906 -2.6875,2.41875c-0.36281,1.26313 0.01344,2.60688 0.9675,3.49375l31.605,31.605h-101.5875c-0.1075,0 -0.215,0 -0.3225,0c-1.89469,0.09406 -3.37281,1.70656 -3.27875,3.60125c0.09406,1.89469 1.70656,3.37281 3.60125,3.27875h101.5875l-31.605,31.605c-1.02125,0.83313 -1.49156,2.16344 -1.19594,3.45344c0.29562,1.27656 1.30344,2.28438 2.58,2.58c1.29,0.29563 2.62031,-0.17469 3.45344,-1.19594l37.5175,-37.41l2.365,-2.4725l-2.365,-2.4725l-37.5175,-37.41c-0.71219,-0.76594 -1.74687,-1.15562 -2.795,-1.075c-0.1075,0 -0.215,0 -0.3225,0z"></path></g></g></svg>
+          </span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+    $('.carousel').carousel({
+  interval: 4000
+})
+    </script>
+  </body>
+</html>
