@@ -315,7 +315,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color:rgba(0, 128, 128,0.6);
+  background-color:rgba(0, 87, 128, 0.6);
 }
 
 .overlay h1, .overlay h2{
@@ -583,7 +583,7 @@ background-color:#f3f7fa;
   border: 1px solid rgba(108, 123, 255, 0.3);
 }
 .contact-banner{
-  background-color: #f3f7fa;
+  /* background-color: #f3f7fa; */
 }
 /* 
 ==== END - Inner Page Layout styles ====

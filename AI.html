@@ -17,10 +17,47 @@
   <link rel="stylesheet" href="css/aos.css" />
   <link rel="stylesheet" href="css/animate.min.css">
   <style>
-    .header-img {
-      background-image: url("./images/bg_header/ai.jpg");
+    .Capability{
+      position: relative;
+      top: -100px;
     }
+    .overviewText{
+      color: #fff;
+    }
+    .header-img {
+      background: linear-gradient(45deg, black, transparent);
+      height: 520px;
+    }
+    .header-title{
+      text-align: left;
+      font-weight: normal;
+      font-size: 4rem; 
+    }
+    .capability-card .card-body{
+      background: #fff;
+    }
+    .contact-banner{
+      position: relative;
+      /* background-image: url('../images/home/connect.jpg'); */
+      padding: 40px;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      z-index: 1;
 
+    }
+    .contact-banner .row{
+      margin: 0 auto;
+      background: linear-gradient(to bottom, transparent, #f3f7fa);;
+      width: 950px;
+      padding: 20px;
+      border-radius: 100px;
+    }
+    
+    .btn-outline-primary{
+      border-radius: 50px !important;
+      float: right;
+    }
     .service .card-1 .card-icon {
       background: rgba(108, 117, 125, 1);
     }
@@ -127,7 +164,37 @@
       ==== HEADER ====
      -->
     <section class="container-fluid header-img overlay">
-      <h1 class="header-title">Artificial Intelligence</h1>
+    
+      <section class="container pb-4">
+          <h1 class="header-title">Artificial Intelligence</h1>
+        <!-- <h3 data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out-sine" data-aos-delay="100"
+          data-aos-duration="1000" class="title-1">Our Artificial Intelligence Highlights</h3> -->
+  
+        <div class="row py-4">
+          <!-- <div data-aos="fade-up" data-aos-delay="200" data-aos-offset="300" data-aos-easing="ease-in-sine"
+            class="col-lg-5 col-12">
+            <p class="service-tag"><span class="service-highlight"></span><span>Service</span></p>
+            <h4 class="title-3"> A Product-Centric Approach to Connect to Individual Clients</h4>
+          </div> -->
+  
+          <div data-aos="fade-up" data-aos-delay="300" data-aos-offset="300" data-aos-easing="ease-in-sine"
+            class="my-2 col-lg-7 col-12 text-left">
+            <div class="overviewText">
+              <h4 class="">Overview</h4>
+              <p class="">
+                At Virtech Technologies AI, we’re conducting research that advances the state-of-the-art in the field,
+                applying AI to
+                products and to new domains, and developing tools to ensure that everyone can access AI. Virtech’s mission
+                is to organize the world’s information and make it universally accessible and useful. AI is helping us do
+                that in exciting new ways, solving problems for our users, our customers, and the world.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <img src="./images/bg_header/">
+          </div>
+        </div>
+      </section>
 
     </section>
     <!-- 
@@ -137,7 +204,7 @@
       ==== BREADCRUMB ====
     -->
 
-    <nav aria-label="breadcrumb">
+    <!-- <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/" class="d-flex justify-content-center align-items-center"><svg
               class="mr-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -148,11 +215,11 @@
         <li class="breadcrumb-item" aria-current="page">Services</li>
         <li class="breadcrumb-item active" aria-current="page">Artificial Intelligence</li>
       </ol>
-    </nav>
+    </nav> -->
     <!-- 
     ==== Service Overview ====
    -->
-    <section class="container pb-4">
+    <!-- <section class="container pb-4">
       <h3 data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out-sine" data-aos-delay="100"
         data-aos-duration="1000" class="title-1">Our Artificial Intelligence Highlights</h3>
 
@@ -178,29 +245,24 @@
 
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- 
     ==== END - OVERVIEW ====
    -->
     <!-- 
     ==== CAPABILITIES ====
    -->
-    <section class="container-fluid wrapper capabilities">
-      <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out-sine"
-        data-aos-delay="100" data-aos-duration="1000">
-        <h2 class="title-1 py-2">Artificial Intelligence Capabilities</h2>
-        <!-- <p class="title-caption">A Product-Centric Approach to Connect to Individual Clients.</p> -->
-      </div>
+    
 
       <!-- Capability Cards -->
       <div class="container">
-        <div class="row d-flex justify-content-lg-center pt-md-5 pt-sm-2">
+        <div class="row d-flex justify-content-lg-center Capability">
           <!-- Capability - 1 -->
           <div class="col-lg-4 col-md-6 col-12 capability-card" data-aos="fade-up"
             data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out-sine" data-aos-delay="200"
             data-aos-duration="1000">
             <div class="card-body shadow-sm">
-              <img src="./images/AI/voice-recognition.svg" height="100" alt="supply chain">
+              <img src="./images/AI/voice-recognition.svg" height="80" alt="supply chain">
               <h3 class="title-3 py-3">Natural Language Processing</h3>
               <p class="text-2">NLP is fast becoming an essential skill for modern-day organizations to gain a
                 competitive edge. It has become an essential tool for many new, from chatbots, intelligent
@@ -213,7 +275,7 @@
             data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out-sine" data-aos-delay="300"
             data-aos-duration="1000">
             <div class="card-body shadow-sm">
-              <img src="./images/AI/online-learning.svg" height="100" alt="blockchain security">
+              <img src="./images/AI/online-learning.svg" height="80" alt="blockchain security">
               <h3 class="title-3 py-3">Machine Learning</h3>
               <p class="text-2">ML provides systems the ability to automatically learn from experience without being
                 explicitly programmed. ML focuses on the development of computer programs that can access data and use
@@ -226,7 +288,7 @@
             data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out-sine" data-aos-delay="400"
             data-aos-duration="1000">
             <div class="card-body shadow-sm">
-              <img src="./images/AI/learning.svg" height="100" alt="digital identity">
+              <img src="./images/AI/learning.svg" height="80" alt="digital identity">
               <h3 class="title-3 py-3">Deep Learning</h3>
               <p class="text-2">With Deep Learning you can make a computer see, synthesize novel art, translate
                 languages, render a medical diagnosis, or build pieces of a car that can drive itself.</p>
@@ -314,15 +376,16 @@
      ==== CONTACT US ====
     -->
     <section class="container-fluid contact-banner wrapper">
+      <div class="row container">
       <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out-sine"
-        data-aos-delay="100" data-aos-duration="1000">
-        <h3 class="title-1">Have a question? Let's Talk with our Experts</h3>
-        <p class="title-caption">Share your ideas with us and we do our best to turn your ideas into reality</p>
+        data-aos-delay="100" data-aos-duration="1000" class="col-md-8 d-flex justify-content-end align-items-center flex-column">
+        <h3 class="">Have a question? Let's Talk with our Experts</h3>
+        <p class="title-caption m-0">Share your ideas with us and we do our best to turn your ideas into reality</p>
       </div>
-      <p class="text-center mt-4 mb-0">
+      <p class="text-center mb-0 col-md-4 float-right d-flex justify-content-end align-items-center">
         <a href="./contactus.html" class="btn btn-outline-primary btn-md btn-shadow-2 btn-lg">Get In Touch</a>
       </p>
-
+    </div>
     </section>
     <!-- 
        ==== END - CONTACT US ====
