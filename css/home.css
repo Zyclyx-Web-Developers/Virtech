@@ -104,9 +104,7 @@ width: 100%;
 #homeCarousel .carousel-item img{ 
 width: 70%;
 }
-#homeCarousel .carousel-caption{
-top: 25% ;
-animation:caption-move-right 1.5s ease;
+#homeCarousel .carousel-caption{ top: 25% ; animation:caption-move-right 1.5s ease; -webkit-animation:caption-move-right 1.5s ease;
 } 
 #homeCarousel .carousel-caption h2{
   font-size: 3rem;
@@ -154,6 +152,10 @@ font-size: 2rem;
   -moz-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
+  -webkit-border-radius:0.8rem !important;
+  -moz-border-radius:0.8rem !important;
+  -ms-border-radius:0.8rem !important;
+  -o-border-radius:0.8rem !important;
 }
 .welcome-card img {
   max-width: 70px;
@@ -187,11 +189,37 @@ font-size: 2rem;
   justify-content: center;     
  }
  
- .automation-inner img{
-   width: 70%;
-   border-radius: 0.6rem;
-    
- } 
+ .automation-inner,.blockchain-inner{
+    background-color: #f5f5f5;
+    position: relative;
+}
+.automation-inner::before{
+position: absolute;
+top: 0;
+
+} 
+.automation-inner{
+  animation:fade-left 5s ease-out;
+  -webkit-animation:fade-left 5s ease-out;
+  overflow: hidden;   
+}
+.automation-inner .img-box img{
+  transform: translateX(-180%);
+  -webkit-transform: translateX(-180%);
+  -moz-transform: translateX(-180%);
+  -ms-transform: translateX(-180%);
+  -o-transform: translateX(-180%);
+}
+@keyframes fade-left{
+  0%{
+    width:0px;
+    background-color: red;    
+  }
+  100%{
+    width: 100%;
+    background-color: green;
+  }
+}
  .blockchain-inner img{
   width: 90%;   
  }
