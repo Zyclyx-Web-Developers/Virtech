@@ -2,8 +2,7 @@
 (function(){
 /*
 UPDATE JOB DESCRIPTION PAGE CONTENT
-*/
-let months =  ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+*/ 
 let urlParams = new URLSearchParams(window.location.search);
 let id = urlParams.get('id');
 let title = '';
@@ -14,9 +13,7 @@ let jobtitle=document.getElementById('jobtitle');
 let description=document.getElementById('description');
 let minqualifications=document.getElementById('qualifications');
 let location=document.getElementById('location');
-// let startDate = document.getElementById('startDate');
-// let closeDate = document.getElementById('closeDate');
-// let jobtype=document.getElementById('jobtype');
+ 
 
 fetch(`https://agile-plateau-09650.herokuapp.com/jobopenings/${id}`) 
 .then(function(response){
@@ -34,14 +31,10 @@ if(data.requirements){
 }
 minqualifications.innerHTML = qualifyhtml;
 
-//job description
- 
- 
- 
+//job description 
 description.textContent=data.description;
-
- 
 jobtitle.textContent= data.title;
+title - data.title;
   // responsibilities
  let resHtml = ''
  if(data.requirements){
@@ -73,14 +66,11 @@ SUBMIT JOB APPLICATION FORM DATA
     event.preventDefault();
     jobApplicationForm.classList.add('was-validated');
     document.getElementById("submitApplicationButton").setAttribute("disabled",true);
-    document.getElementById("btnText").style.display = "none";
-    document.getElementById("btnSpinner").style.display = "block";   
-
+    document.getElementById("submitApplicationButton").innerHTML = `<span>Please Wait .. <span class="spinner-border spinner-border-sm text-white" role="status" aria-hidden="true"></span><span class="sr-only">Loading...</span></span>`;
     // if any errors enable send message button to re-send form data
     if(!jobApplication.checkValidity()){         
         document.getElementById("submitApplicationButton").removeAttribute("disabled");
-        document.getElementById("btnText").style.display = "block";
-        document.getElementById("btnSpinner").style.display = "none";   
+        document.getElementById("submitApplicationButton").innerHTML =`Submit Application <i class="ml-2 far fa-paper-plane"></i>`;
     }
 
     // if no errors send form data to the API
@@ -92,7 +82,7 @@ SUBMIT JOB APPLICATION FORM DATA
             email:formData.get('email'),
             phone:formData.get('phone'),
             message:formData.get('message'),             
-            position:jobTitle
+            position:title
           }  
           
           // console.log(data);
@@ -105,14 +95,15 @@ SUBMIT JOB APPLICATION FORM DATA
           })
               .then(function (response) {
                   document.getElementById("submitApplicationButton").setAttribute("disabled",true);
-                  document.getElementById("btnText").style.display = "none";
-                  document.getElementById("btnSpinner").style.display = "block";                    
+                  document.getElementById("submitApplicationButton").innerHTML = `<span>Please Wait .. <span class="spinner-border spinner-border-sm text-white" role="status" aria-hidden="true"></span><span class="sr-only">Loading...</span></span>`;
                   return response.json();
               })                 
-              .then(function (jsondata) {                           
-                 console.log(jsondata);
+              .then(function (jsondata) {                            
                  $('#JobApplicationModal').modal('show');
-                // document.getAnimations.contactName.textContent = jsondata.name;
+                 document.getElementById("submitApplicationButton").innerHTML =`Submit Application <i class="ml-2 far fa-paper-plane"></i>`;                 
+                 document.getElementById("submitApplicationButton").removeAttribute("disabled");
+                 jobApplicationForm.reset();
+                 jobApplicationForm.classList.remove('was-validated'); 
 
               })
               .catch(function (error) {
