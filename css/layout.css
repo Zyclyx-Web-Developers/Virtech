@@ -73,6 +73,10 @@
   background-color: hsl(180, 100%, 20%);
   border-color: hsl(180, 100%, 20%);
 }
+.btn-primary:active{
+  background-color: hsl(180, 100%, 20%);
+  border-color: hsl(180, 100%, 20%);
+}
 .btn-outline-primary{
   border-color:#008080 !important;
   color: hsl(180, 100%, 15%);
@@ -145,6 +149,14 @@
   background: #ffffff;
   transform: skewX(60deg);
   transition: 0.4s linear;
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -ms-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  -webkit-transform: skewX(60deg);
+  -moz-transform: skewX(60deg);
+  -ms-transform: skewX(60deg);
+  -o-transform: skewX(60deg);
 }
 .btn-breach::before {
   top: -4px;
@@ -161,7 +173,7 @@
   border-color: hsl(var(--hue), 72%, 46%);
 }
 .btn-breach:hover::before {
-  transform: translateX(360%) skewX(60deg);
+  transform: translateX(360%) skewX(60deg);   
 }
 .btn-breach:hover::after {
   transform: translateX(-360%) skewX(60deg);
