@@ -1,0 +1,25 @@
+{
+  "name": "virtech",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-gtag": "^1.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zyclyx-Web-Developers/Virtech.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zyclyx-Web-Developers/Virtech/issues"
+  },
+  "homepage": "https://github.com/Zyclyx-Web-Developers/Virtech#readme"
+}
