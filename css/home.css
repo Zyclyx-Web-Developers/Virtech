@@ -287,8 +287,7 @@ background-color:hsl(180, 100%, 99.4%);
  
  /* === INDUSTRIES === */
   
- .industry-cards .card img{
-  height: 150px;
+ .industry-cards .card img{   
   transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;

@@ -2,6 +2,11 @@
     background-image:url("../images/bg_header/contact.jpg");
     background-size: contain;        
 }
+#errorAlert {
+    color: red;
+    font-size: 10px;
+}
+
 .overlay:before{
     background-color:rgba(0, 128, 128,0.8);
 }

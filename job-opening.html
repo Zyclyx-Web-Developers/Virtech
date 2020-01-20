@@ -11,28 +11,11 @@
   <title>Open Job Position Details - Virtech Technologies</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./css/layout.css">
+
+  <!-- build:css css/job-opening.min.css -->
   <link rel="stylesheet" href="./css/job-preview.css" />
-  <style>
-    .error {
-      color: red;
-      font-size: 10px;
-    }
-  </style>
-
-  <!-- google Analytics -->
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154979814-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-154979814-2');
-  </script>
-
-  <!-- Google Analytics End -->
+  <link rel="stylesheet" href="./css/layout.css">
+  <!-- endbuild -->
 </head>
 
 <body class="text-center">
@@ -68,14 +51,14 @@
                 Services
               </a>
               <div class="dropdown-menu dropdown-industry" aria-labelledby="navbarDropdownMenuIndustry">
-                <a class="dropdown-item my-1 py-1" href="./RPA.html">Robotic Process Automation</a>
-                <a class="dropdown-item my-1 py-1" href="./AI.html">Artificial Intelligence</a>
-                <a class="dropdown-item my-1 py-1" href="./Blockchain.html">BlockChain</a>
-                <a class="dropdown-item my-1 py-1" href="./Bigdata.html">Big Data</a>
-                <a class="dropdown-item my-1 py-1" href="./IoT.html">Internet Of Things</a>
-                <a class="dropdown-item my-1 py-1" href="./Cyber-security-services.html">Cyber Security</a>
-                <a class="dropdown-item my-1 py-1" href="./Application-Development.html">Application Development</a>
-                <a class="dropdown-item my-1 py-1" href="./Digital-Marketing.html">Digital Marketing</a>
+                <a class="dropdown-item my-1 py-1" href="./robotic-process-automation.html">Robotic Process Automation</a>
+                <a class="dropdown-item my-1 py-1" href="./artificial-intelligence.html">Artificial Intelligence</a>
+                <a class="dropdown-item my-1 py-1" href="./blockchain.html">BlockChain</a>
+                <a class="dropdown-item my-1 py-1" href="./bigdata.html">Big Data</a>
+                <a class="dropdown-item my-1 py-1" href="./internet-of-things-IoT.html">Internet Of Things</a>
+                <a class="dropdown-item my-1 py-1" href="./cyber-security.html">Cyber Security</a>
+                <a class="dropdown-item my-1 py-1" href="./application-development.html">Application Development</a>
+                <a class="dropdown-item my-1 py-1" href="./digital-marketing.html">Digital Marketing</a>
               </div>
             </li>
 
@@ -276,7 +259,7 @@
             </div>
             <button id="submitApplicationButton" class="btn btn-primary btn-shadow-primary btn-lg pt-2 mt-2"
               type="submit">
-              Submit Application <i class="ml-2 far fa-paper-plane"></i>  
+              Submit Application <i class="ml-2 far fa-paper-plane"></i>
             </button>
           </form>
         </div>
@@ -287,7 +270,7 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-body">
-              <h5>Application Submitted Successfully</h5>            
+              <h5>Application Submitted Successfully</h5>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -416,18 +399,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+  <!-- build:js js/script.min.js -->
   <script src="./js/vendor/aos.js"></script>
   <script src="./js/chatBot.js"></script>
-
-  <script>
-    $(document).ready(function () {
-      $(".se-pre-con").fadeOut("slow");
-      AOS.init({
-        once: true,
-        mirror: false
-      });
-      document.getElementById("current-year").innerHTML = new Date().getFullYear();
-    });
-  </script>
+  <script src="./js/plugins.js"></script>
+  <!-- endbuild -->
 </body>
+
 </html>

@@ -1,32 +1,14 @@
-// Initiate animate on scroll library
-window.onload = function(){  
+$(document).ready(function () {
+  
+  // remove page loading circle
+  $(".se-pre-con").fadeOut("slow");
+  
+  // Initiate Animate on scroll
   AOS.init({
-    once:true,
-    mirror:false
+    once: true,
+    mirror: false
   });
-}
 
-// Avoid `console` errors in browsers that lack a console.
-(function() {
-  var method;
-  var noop = function () {};
-  var methods = [
-    'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
-    'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
-    'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
-    'timeline', 'timelineEnd', 'timeStamp', 'trace', 'warn'
-  ];
-  var length = methods.length;
-  var console = (window.console = window.console || {});
-
-  while (length--) {
-    method = methods[length];
-
-    // Only stub undefined methods.
-    if (!console[method]) {
-      console[method] = noop;
-    }
-  }
-}());
-
-// Place any jQuery/helper plugins in here.
+  // update footer copyright year
+  document.getElementById("current-year").innerHTML = new Date().getFullYear();
+});
