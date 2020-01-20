@@ -45,7 +45,7 @@ function cleancss(){
 }
  
 function minifyJS() {
-    return gulp.src('.dist/js/**/*.js')
+    return gulp.src('./dist/js/**/*.js')
         .pipe(uglifyes())
         .pipe(gulp.dest('dist/js'))
 }
