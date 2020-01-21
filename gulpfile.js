@@ -70,7 +70,17 @@ function copyFavicon(){
         .pipe(gulp.dest("dist/"))
 }
 
-const build = gulp.series(fileConcat,minifyHTML,cleancss,minifyJS,copyFonts,optimizeImages,copyFavicon);
+function copyHtaccess(){
+    return gulp.src("./.htaccess")
+        .pipe(gulp.dest("dist/"))
+}
+
+function copyrobotstxt(){
+    return gulp.src("./robots.txt")
+        .pipe(gulp.dest("dist/"))
+}
+
+const build = gulp.series(fileConcat,minifyHTML,cleancss,minifyJS,copyFonts,optimizeImages,copyFavicon,copyrobotstxt,copyHtaccess);
 
 exports.googlesitemap = googlesitemap;
 exports.googleAnalytics = googleAnalytics;
@@ -81,4 +91,6 @@ exports.optimizeImages = optimizeImages;
 exports.cleancss = cleancss;
 exports.copyFonts = copyFonts;
 exports.copyFavicon = copyFavicon;
+exports.copyHtaccess = copyHtaccess;
+exports.copyrobotstxt = copyrobotstxt;
 exports.build = build;
