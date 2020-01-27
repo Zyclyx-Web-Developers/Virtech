@@ -30,9 +30,18 @@
     font-size: 14px;
     border-radius: 0px;          
     padding: 1.4rem !important;
-    border-bottom: 1px solid #00b7fa;
+    border-bottom: 1px solid #00b7fa;       
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
-       
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
 }
 .form-group{
     text-align: left !important;
