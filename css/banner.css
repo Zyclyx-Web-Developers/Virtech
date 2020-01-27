@@ -1,0 +1,27 @@
+.header-img-app {
+    background-image: url("../images/bg_header/application_development.jpg");
+    background-position: bottom;
+  }
+  .header-img-ai {
+    background-image: url("../images/bg_header/ai.jpg");
+  }
+  .header-img-bigdata {
+    background-image: url("../images/bg_header/big-data.jpg");
+  }
+  .header-img-blockchain {
+    background-image: url("../images/bg_header/blockchain.jpg");
+    background-position: center;
+  }
+  .header-img-cybersecurity {
+    background-image: url("../images/bg_header/cyber_security.jpg");
+  }
+  .header-img-digtial {
+    background-image: url("../images/bg_header/digital-marketing.jpg");
+    background-position: top;
+  }
+  .header-img-iot {
+    background-image: url("../images/bg_header/iot.jpg");
+  }
+  .header-img-rpa {
+    background-image: url("../images/bg_header/rpa.jpg");
+  }
